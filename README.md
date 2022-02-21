@@ -48,7 +48,7 @@ Watch this video -> https://youtu.be/tdw2sCyTXI8
 
 ----------
 
-This code is based on [Question2Answer][Q2A] and it is also GPL licensed.
+This code is based on [Question2Answer][Q2A] and it is also GPL licensed. Instead of reinventing the wheel from scratch, we reused existing robust and production-ready [Question2Answer][Q2A] code and build on top of it to ensure minimum bugs and vulnerabilities.
 
 
 [Q2A]: http://www.question2answer.org/
