@@ -32,8 +32,8 @@ It is highly customisable with many awesome features:
 - Go to browser and run the site. That's it.
 
 ## How to deploy the smart contract on Aurora EVM
+You might already know that Aurora is the EVM for NEAR protocol which allows you to run Ethereum smart contracts written with Solidity on NEAR blockchain. If you want to know more, read the official doc -> https://doc.aurora.dev/
 
--You might already know that Aurora is the EVM for NEAR protocol which allows you to run Ethereum smart contracts written with Solidity on NEAR blockchain. If you want to know more, read the official doc -> https://doc.aurora.dev/
 - To set up your Metamask with Aurora testnet, just go to Chainlist and search for "Aurora Testnet" and click on the "Connect Metamask" button. See -> https://ibb.co/T2QCZcY
 - Go get some test ETH tokens for Aurora Testnet. Go to -> https://aurora.dev/faucet
 - Go to installers folder at the installation and open NanoGigs.sol with text editor. Copy the entire code.
