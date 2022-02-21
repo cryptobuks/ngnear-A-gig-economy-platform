@@ -43,6 +43,9 @@ It is highly customisable with many awesome features:
 - Deploy the code on Aurora and copy the contract address.
 - At the installation folder, go to qa-theme/lion/js/web3-connector.js and at line 18 to 20, enter your wallet address, contract address and private key. 
 
+## How to use
+Watch this video -> https://youtu.be/tdw2sCyTXI8
+
 ----------
 
 This code is based on [Question2Answer][Q2A] and it is also GPL licensed.
