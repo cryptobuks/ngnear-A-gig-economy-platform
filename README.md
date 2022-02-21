@@ -26,13 +26,10 @@ It is highly customisable with many awesome features:
 ## How to install
 
 - Clone this repo.
-- Create a MySQL database, and a MySQL user with full permissions for that database. If you're interested, the privileges actually needed are: CREATE, ALTER, DELETE, INSERT, SELECT, UPDATE, LOCK TABLES
-
-Note down the MySQL details: username, password, database name and server host name. If MySQL is running on the same server as your website, the server host name is likely to be 127.0.0.1 or localhost.
-
+- Create a MySQL database, and a MySQL user with full permissions for that database. If you're interested, the privileges actually needed are: CREATE, ALTER, DELETE, INSERT, SELECT, UPDATE, LOCK TABLES. Note down the MySQL details: username, password, database name and server host name. If MySQL is running on the same server as your website, the server host name is likely to be 127.0.0.1 or localhost.
 - Open qa-config.php in your text editor, insert the MySQL details at the top, and save the file. Do not use a word processor such as Microsoft Word for this, but rather Notepad or another appropriate text editing program.
-
 - Go to installers folder and run the sql_to_run.sql file in your MySQL IDE or Phpmyadmin.
+- Go to browser and run the site. That's it.
 
 ## How to deploy the smart contract on Aurora EVM
 
@@ -48,7 +45,7 @@ Note down the MySQL details: username, password, database name and server host n
 
 ----------
 
-This code is based on [Question2Answer][Q2A] led by Gideo and it is also GPL licensed.
+This code is based on [Question2Answer][Q2A] and it is also GPL licensed.
 
 
 [Q2A]: http://www.question2answer.org/
