@@ -1,0 +1,11 @@
+{
+  "name": "Lion",
+  "description": "The first and only Question2Answer theme exclusively designed for mobile devices. Now supports RTL.",
+  "version": "1.0.5-beta",
+  "date": "2019-01-24",
+  "author": "Q2A Market",
+  "author_uri": "http://www.q2amarket.com",
+  "update_uri" : "http://q2amarket.com/updates/lion/metadata.json",
+  "license": "GPLv2",
+  "min_q2a": "1.8"
+}

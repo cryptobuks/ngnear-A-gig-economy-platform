@@ -1,0 +1,6 @@
+@mixin card($padding) {
+  padding: $padding;
+  margin: 0 0 1rem 0;
+  background-color: $light-color;
+  box-shadow: 0 1px 3px rgba($gray-darker, 0.4);
+}

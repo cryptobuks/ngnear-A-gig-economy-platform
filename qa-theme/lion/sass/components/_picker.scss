@@ -1,0 +1,48 @@
+
+.ui-colorpicker {
+  position: fixed;
+  border: 1px solid #aaa;
+  padding: 0.2em;
+  background: #fff;
+  display: none;
+
+  .palette {
+    border-spacing: 0px;
+    font-size: 10px;
+
+    .cell {
+      width: 15px;
+      height: 15px;
+      text-align: center;
+      padding: 1px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      color: #fff;
+
+      &:hover {
+        border-color: #fff;
+      }
+
+      &.alt {
+        color: #000;
+
+        &:hover {
+          border-color: #000;
+        }
+      }
+    }
+
+    .head {
+      .cell {
+      }
+    }
+
+    .sep {
+      td {
+        height: 2px;
+      }
+    }
+  }
+
+}
+

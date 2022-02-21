@@ -1,0 +1,2559 @@
+@font-face {
+  font-family: "Material Icons";
+  src: url('fonts/MaterialIcons-Regular.ttf?1533979654') format('truetype'), url('fonts/MaterialIcons-Regular.woff?1533979654') format('woff'), url('fonts/MaterialIcons-Regular.woff2?1533979654') format('woff2'), url('fonts/MaterialIcons-Regular.svg?1533979654') format('svg'), url('fonts/MaterialIcons-Regular.eot?1533979654') format('embedded-opentype');
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url('fonts/Roboto-Light-webfont.ttf?1533979654') format('truetype'), url('fonts/Roboto-Light-webfont.woff?1533979654') format('woff'), url('fonts/Roboto-Light-webfont.svg?1533979654') format('svg'), url('fonts/Roboto-Light-webfont.eot?1533979654') format('embedded-opentype');
+}
+@font-face {
+  font-family: "Roboto";
+  src: url('fonts/Roboto-Regular-webfont.ttf?1533979654') format('truetype'), url('fonts/Roboto-Regular-webfont.woff?1533979654') format('woff'), url('fonts/Roboto-Regular-webfont.svg?1533979654') format('svg'), url('fonts/Roboto-Regular-webfont.eot?1533979654') format('embedded-opentype');
+}
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url('fonts/Roboto-Italic-webfont.ttf?1533979654') format('truetype'), url('fonts/Roboto-Italic-webfont.woff?1533979654') format('woff'), url('fonts/Roboto-Italic-webfont.svg?1533979654') format('svg'), url('fonts/Roboto-Italic-webfont.eot?1533979654') format('embedded-opentype');
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url('fonts/Roboto-Medium-webfont.ttf?1533979654') format('truetype'), url('fonts/Roboto-Medium-webfont.woff?1533979654') format('woff'), url('fonts/Roboto-Medium-webfont.svg?1533979654') format('svg'), url('fonts/Roboto-Medium-webfont.eot?1533979654') format('embedded-opentype');
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url('fonts/Roboto-Black-webfont.ttf?1533979654') format('truetype'), url('fonts/Roboto-Black-webfont.woff?1533979654') format('woff'), url('fonts/Roboto-Black-webfont.svg?1533979654') format('svg'), url('fonts/Roboto-Black-webfont.eot?1533979654') format('embedded-opentype');
+}
+/* CONDENSED FONTS */
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/components/_pushy.scss */
+.pushy {
+  position: fixed;
+  width: 304px;
+  height: 100%;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  /* enables momentum scrolling in iOS overflow elements */
+}
+/* line 11, ../sass/components/_pushy.scss */
+.pushy a {
+  display: block;
+  color: #2A2A2A;
+  padding: 16px;
+  text-decoration: none;
+}
+/* line 17, ../sass/components/_pushy.scss */
+.pushy a .material-icons {
+  float: left;
+  margin-right: 36px;
+}
+/* line 23, ../sass/components/_pushy.scss */
+.pushy a:hover {
+  color: black;
+}
+/* line 31, ../sass/components/_pushy.scss */
+.pushy.pushy-left {
+  left: 0;
+}
+/* line 35, ../sass/components/_pushy.scss */
+.pushy.pushy-right {
+  right: 0;
+}
+
+/* line 40, ../sass/components/_pushy.scss */
+.pushy-content {
+  visibility: hidden;
+}
+
+/* line 47, ../sass/components/_pushy.scss */
+.pushy-link a:hover {
+  color: black;
+  background-color: #E7E7E7;
+}
+/* line 51, ../sass/components/_pushy.scss */
+.pushy-link a.active, .pushy-link a.qa-nav-main-selected {
+  background-color: #E7E7E7;
+  color: #7A532E;
+}
+
+/* line 58, ../sass/components/_pushy.scss */
+.account-box {
+  width: 100%;
+  height: auto;
+  background: url('../images/drawer-bg.jpeg?1533979654');
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  padding: 16px;
+}
+/* line 67, ../sass/components/_pushy.scss */
+.account-box .account-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+/* line 77, ../sass/components/_pushy.scss */
+.account-box .account-links {
+  position: relative;
+  z-index: 99999;
+}
+/* line 82, ../sass/components/_pushy.scss */
+.account-box .account-action {
+  position: relative;
+  z-index: 99999;
+  display: block;
+}
+/* line 89, ../sass/components/_pushy.scss */
+.account-box .ac-avatar {
+  width: 64px;
+  height: 64px;
+  display: block;
+  float: left;
+  overflow: hidden;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-color: black;
+}
+/* line 100, ../sass/components/_pushy.scss */
+.account-box .ac-avatar .qa-avatar-link {
+  padding: 0;
+  line-height: 1;
+}
+/* line 105, ../sass/components/_pushy.scss */
+.account-box .ac-avatar img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+/* line 112, ../sass/components/_pushy.scss */
+.account-box a.action-item {
+  float: right;
+  line-height: 1;
+  color: #fff;
+}
+/* line 120, ../sass/components/_pushy.scss */
+.account-box .user-links {
+  margin-top: 44px;
+}
+/* line 125, ../sass/components/_pushy.scss */
+.account-box .username a {
+  font-family: "Roboto-Medium", Arial, SansSerif;
+  font-size: 14px;
+  padding: 0;
+  color: #fff;
+}
+/* line 133, ../sass/components/_pushy.scss */
+.account-box .points {
+  font: normal 100 14px/1.4 "Roboto-Light", Arial, Helvetica, sans-serif;
+}
+
+/* Menu Movement */
+/* line 140, ../sass/components/_pushy.scss */
+.pushy-left {
+  -webkit-transform: translate3d(-304px, 0, 0);
+  -ms-transform: translate3d(-304px, 0, 0);
+  transform: translate3d(-304px, 0, 0);
+}
+
+/* line 155, ../sass/components/_pushy.scss */
+.pushy-right {
+  -webkit-transform: translate3d(304px, 0, 0);
+  -ms-transform: translate3d(304px, 0, 0);
+  transform: translate3d(304px, 0, 0);
+}
+
+/* line 162, ../sass/components/_pushy.scss */
+.pushy-open-right #container,
+.pushy-open-right .push {
+  -webkit-transform: translate3d(-304px, 0, 0);
+  -ms-transform: translate3d(-304px, 0, 0);
+  transform: translate3d(-304px, 0, 0);
+}
+
+/* line 172, ../sass/components/_pushy.scss */
+.pushy-open-left .pushy,
+.pushy-open-right .pushy {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 178, ../sass/components/_pushy.scss */
+.pushy-open-left .pushy-content,
+.pushy-open-right .pushy-content {
+  visibility: visible;
+}
+
+/* Menu Transitions */
+/* line 185, ../sass/components/_pushy.scss */
+#container,
+.pushy,
+.push {
+  transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+/* line 191, ../sass/components/_pushy.scss */
+.pushy-content {
+  transition: visibility 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+/* Site Overlay */
+/* line 197, ../sass/components/_pushy.scss */
+.site-overlay {
+  display: none;
+}
+
+/* line 203, ../sass/components/_pushy.scss */
+.pushy-open-left .site-overlay,
+.pushy-open-right .site-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-animation: fade 500ms;
+  animation: fade 500ms;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Submenu Appearance */
+/* line 237, ../sass/components/_pushy.scss */
+.pushy-submenu {
+  /* Submenu Buttons */
+  /* Submenu Icon */
+}
+/* line 238, ../sass/components/_pushy.scss */
+.pushy-submenu ul {
+  padding-left: 16px;
+  transition: max-height 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+/* line 243, ../sass/components/_pushy.scss */
+.pushy-submenu ul .pushy-link {
+  transition: opacity 0.2s ease-in-out;
+}
+/* line 250, ../sass/components/_pushy.scss */
+.pushy-submenu button {
+  width: 100%;
+  color: #2A2A2A;
+  padding: 16px;
+  text-align: left;
+  background: transparent;
+  border: 0;
+}
+/* line 258, ../sass/components/_pushy.scss */
+.pushy-submenu button:hover {
+  color: #FFF;
+}
+/* line 265, ../sass/components/_pushy.scss */
+.pushy-submenu > a,
+.pushy-submenu > button {
+  position: relative;
+}
+/* line 270, ../sass/components/_pushy.scss */
+.pushy-submenu > a::after,
+.pushy-submenu > button::after {
+  content: '';
+  display: block;
+  height: 11px;
+  width: 8px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  background: url("../img/arrow.svg") no-repeat;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: transform 0.2s;
+}
+
+/* Submenu Movement */
+/* line 290, ../sass/components/_pushy.scss */
+.pushy-submenu-closed ul {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 296, ../sass/components/_pushy.scss */
+.pushy-submenu-closed .pushy-link {
+  opacity: 0;
+}
+
+/* line 301, ../sass/components/_pushy.scss */
+.pushy-submenu-open {
+  /* Submenu Icon */
+}
+/* line 302, ../sass/components/_pushy.scss */
+.pushy-submenu-open ul {
+  max-height: 1000px;
+  visibility: visible;
+}
+/* line 307, ../sass/components/_pushy.scss */
+.pushy-submenu-open .pushy-link {
+  opacity: 1;
+}
+/* line 313, ../sass/components/_pushy.scss */
+.pushy-submenu-open a::after,
+.pushy-submenu-open button::after {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* line 321, ../sass/components/_pushy.scss */
+.no-scroll {
+  overflow: hidden;
+}
+
+/*
+  add google material design icons
+ */
+/* line 6, ../sass/lion.scss */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/*****************************
+ generic section
+ ****************************/
+/* line 34, ../sass/lion.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 40, ../sass/lion.scss */
+body, html {
+  font: normal normal 16px/1.6 "Roboto", Arial, Helvetica, sans-serif;
+  color: #2A2A2A;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* line 48, ../sass/lion.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 52, ../sass/lion.scss */
+img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+/* line 57, ../sass/lion.scss */
+.clearfix:after, .account-box .account-action:after, .qa-q-item-tags:after, .topbar .qa-search:after, .qa-q-list-item .qa-q-item-main:after, .qa-q-list-item .metas:after, .q-item-moderate-content:after, .qa-q-view-footer .qa-q-additional-buttons-model:after, .a-item-footer .qa-q-additional-buttons-model:after, .qa-c-item-footer .qa-q-additional-buttons-model:after, .qa-q-view-content:after, .qa-a-item-content:after, .qa-c-item-content:after, .qa-q-item-content:after, .qa-q-view .qa-q-view-header .qa-q-view-actions-vote:after, .qa-q-view .qa-q-view-tags .qa-q-view-tag-list:after, .qa-a-list .qa-a-list-item .a-vote-select-box:after, .qa-q-view-c-list .qa-c-item-avatar-meta:after, .qa-a-item-c-list .qa-c-item-avatar-meta:after, .qa-sidepanel .qa-activity-count:after, .qa-sidepanel .qa-nav-cat-list:after, .qa-template-tags .qa-part-ranking:after, .qa-template-categories .qa-part-nav-list .qa-browse-cat-list:after, .qa-template-users .qa-part-ranking:after, .qa-notice:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 63, ../sass/lion.scss */
+.chip {
+  font-size: 12px;
+  display: inline-block;
+  height: 32px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  background-color: #e7e7e7;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+/* line 76, ../sass/lion.scss */
+.tag, .qa-tag-link, .qa-sidepanel .qa-widget-side > div > a {
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 86, ../sass/lion.scss */
+.avatar-image, .qa-q-list-item .list-updates .qa-avatar-link, .qa-q-view .qa-q-view-header .qa-q-view-avatar-when .qa-avatar-link, .qa-a-list .qa-a-list-item .qa-a-item-avatar .qa-avatar-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+/* line 94, ../sass/lion.scss */
+.comment-avatar-image, .qa-q-view-c-list .qa-c-item-avatar-meta .qa-c-item-avatar, .qa-a-item-c-list .qa-c-item-avatar-meta .qa-c-item-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: block;
+}
+/* line 101, ../sass/lion.scss */
+.comment-avatar-image .qa-avatar-image, .qa-q-view-c-list .qa-c-item-avatar-meta .qa-c-item-avatar .qa-avatar-image, .qa-a-item-c-list .qa-c-item-avatar-meta .qa-c-item-avatar .qa-avatar-image {
+  width: 24px;
+  height: 24px;
+}
+
+/*****************************
+ common section
+****************************/
+/* line 111, ../sass/lion.scss */
+.rotate {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+/* line 118, ../sass/lion.scss */
+.flip {
+  transform: rotate(180deg);
+}
+
+/* line 122, ../sass/lion.scss */
+.sub-heading, .qa-template-user .qa-part-form-profile h2, .qa-template-user .qa-part-form-activity h2, .qa-template-account .qa-part-form-profile h2, .qa-template-account .qa-part-form-activity h2, .qa-template-user .qa-part-message-list h2, .qa-template-account .qa-part-message-list h2, .qa-part-message-list h2, .qa-template-messages .qa-part-custom {
+  padding: 0 16px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/* line 128, ../sass/lion.scss */
+.qa-voting {
+  text-align: center;
+  width: 56px;
+  height: 56px;
+  position: relative;
+}
+/* line 138, ../sass/lion.scss */
+.qa-voting .qa-vote-first-button, .qa-voting .qa-vote-second-button, .qa-voting .qa-voted-up-button, .qa-voting .qa-voted-down-button, .qa-voting .qa-vote-one-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 24px;
+  height: 24px;
+  display: block;
+  text-indent: -99999px;
+  position: absolute;
+}
+/* line 149, ../sass/lion.scss */
+.qa-voting .qa-vote-first-button, .qa-voting .qa-voted-up-button {
+  left: 50%;
+  top: -6px;
+  margin-left: -12px;
+}
+/* line 155, ../sass/lion.scss */
+.qa-voting .qa-vote-second-button, .qa-voting .qa-voted-down-button {
+  left: 50%;
+  bottom: -6px;
+  margin-left: -12px;
+}
+/* line 165, ../sass/lion.scss */
+.qa-voting .qa-vote-up-button, .qa-voting .qa-vote-down-button, .qa-voting .qa-vote-up-disabled, .qa-voting .qa-vote-down-disabled, .qa-voting .qa-voted-up-button, .qa-voting .qa-voted-down-button {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 171, ../sass/lion.scss */
+.qa-voting .qa-vote-up-button, .qa-voting .qa-voted-up-button {
+  background-image: url('../images/icons/vote_up.svg?1533979654');
+  opacity: 0.5;
+}
+/* line 176, ../sass/lion.scss */
+.qa-voting .qa-vote-down-button, .qa-voting .qa-voted-down-button {
+  background-image: url('../images/icons/vote_down.svg?1533979654');
+  opacity: 0.5;
+}
+/* line 181, ../sass/lion.scss */
+.qa-voting .qa-vote-up-disabled {
+  background-image: url('../images/icons/vote_up.svg?1533979654');
+  opacity: 0.15;
+}
+/* line 185, ../sass/lion.scss */
+.qa-voting .qa-vote-down-disabled {
+  background-image: url('../images/icons/vote_down.svg?1533979654');
+  opacity: 0.15;
+}
+/* line 190, ../sass/lion.scss */
+.qa-voting .qa-vote-count {
+  font: normal 100 24px/1 "Roboto-Light", Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 56px;
+}
+/* line 200, ../sass/lion.scss */
+.qa-voting .qa-vote-count .qa-netvote-count-data {
+  display: block;
+}
+/* line 203, ../sass/lion.scss */
+.qa-voting .qa-vote-count .qa-netvote-count-pad {
+  display: none;
+}
+
+/* line 213, ../sass/lion.scss */
+.qa-view-count {
+  text-align: center;
+  min-width: 56px;
+  width: auto;
+  height: 56px;
+}
+/* line 220, ../sass/lion.scss */
+.qa-view-count .qa-view-count-data {
+  font: normal 100 24px/1 "Roboto-Light", Arial, Helvetica, sans-serif;
+  display: block;
+}
+/* line 225, ../sass/lion.scss */
+.qa-view-count .qa-view-count-pad {
+  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  display: block;
+}
+
+/* line 235, ../sass/lion.scss */
+.qa-favoriting {
+  display: block;
+  line-height: 1;
+  position: relative;
+}
+/* line 240, ../sass/lion.scss */
+.qa-favoriting .qa-waiting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -12px 0 0 -12px;
+}
+
+/* line 248, ../sass/lion.scss */
+.qa-favorite-button, .qa-unfavorite-button {
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+  outline: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* line 258, ../sass/lion.scss */
+.qa-favorite-button {
+  background: url('../images/icons/favorite_white.svg?1533979654') no-repeat center;
+}
+
+/* line 262, ../sass/lion.scss */
+.qa-unfavorite-button {
+  background: url('../images/icons/favorite_selected.svg?1533979654') no-repeat center;
+}
+
+/* line 268, ../sass/lion.scss */
+.qa-q-item-tags {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #f1f1f1;
+}
+/* line 275, ../sass/lion.scss */
+.qa-q-item-tags ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 280, ../sass/lion.scss */
+.qa-q-item-tags ul li {
+  display: block;
+  float: left;
+  margin: 1%;
+}
+
+/*****************************
+root/body section
+****************************/
+/* line 296, ../sass/lion.scss */
+.qa-body-wrapper {
+  width: 100%;
+  display: block;
+  margin-top: 48px;
+}
+
+/*****************************
+ header section
+****************************/
+/* line 305, ../sass/lion.scss */
+.topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  z-index: 666;
+  padding: 0;
+  color: #fff;
+  display: flex;
+}
+/* line 316, ../sass/lion.scss */
+.topbar .qa-search {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+}
+/* line 325, ../sass/lion.scss */
+.topbar .qa-search .close-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  display: block;
+  margin: 0;
+  color: #999999;
+  z-index: 888;
+}
+/* line 338, ../sass/lion.scss */
+.topbar .qa-search .qa-search-field {
+  width: calc(100% - 48px);
+  height: 48px;
+  padding: 16px 16px 16px 48px;
+  margin: 0;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  float: left;
+  font-size: 24px;
+  -webkit-transition: ease 0.25s;
+  -moz-transition: ease 0.25s;
+  -ms-transition: ease 0.25s;
+  -o-transition: ease 0.25s;
+  transition: ease 0.25s;
+}
+/* line 353, ../sass/lion.scss */
+.topbar .qa-search .qa-search-field:focus {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
+  -webkit-transition: ease 0.25s;
+  -moz-transition: ease 0.25s;
+  -ms-transition: ease 0.25s;
+  -o-transition: ease 0.25s;
+  transition: ease 0.25s;
+}
+/* line 364, ../sass/lion.scss */
+.topbar .qa-search .qa-search-button {
+  width: 48px;
+  height: 48px;
+  display: block;
+  padding: 12px;
+  border: none;
+  outline: none;
+  margin: 0;
+  text-indent: -9999px;
+  float: left;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+/* line 382, ../sass/lion.scss */
+.topbar .menu.menu-btn {
+  cursor: pointer;
+}
+/* line 386, ../sass/lion.scss */
+.topbar .qa-logo, .topbar .topbar-page-title {
+  padding: 12px 12px 12px 24px;
+  line-height: 1.5;
+  width: calc(100% - 96px);
+  white-space: nowrap;
+  overflow-x: scroll;
+  flex: 1 1 0%;
+}
+/* line 395, ../sass/lion.scss */
+.topbar .qa-logo a.qa-logo-link, .topbar .topbar-page-title a.qa-logo-link {
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+}
+/* line 400, ../sass/lion.scss */
+.topbar .qa-logo a.qa-logo-link img, .topbar .topbar-page-title a.qa-logo-link img {
+  width: auto;
+  max-height: 22px;
+  vertical-align: bottom;
+}
+/* line 408, ../sass/lion.scss */
+.topbar .qa-logo .topbar-favorite, .topbar .topbar-page-title .topbar-favorite {
+  float: left;
+  margin-right: 8px;
+}
+/* line 413, ../sass/lion.scss */
+.topbar .qa-logo .topbar-favorite .qa-favorite-button, .topbar .qa-logo .topbar-favorite .qa-unfavorite-button, .topbar .topbar-page-title .topbar-favorite .qa-favorite-button, .topbar .topbar-page-title .topbar-favorite .qa-unfavorite-button {
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+}
+/* line 424, ../sass/lion.scss */
+.topbar ul.auth {
+  cursor: pointer;
+}
+/* line 434, ../sass/lion.scss */
+.topbar ul.auth li.auth-power ul.qa-auth-box {
+  position: absolute;
+  top: 48px;
+  right: 16px;
+  bottom: auto;
+  left: 16px;
+  background-color: #fff;
+  color: #2A2A2A;
+  font-size: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+/*****************************
+ sub nav section
+****************************/
+/* line 469, ../sass/lion.scss */
+.qa-nav-sub {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+}
+/* line 474, ../sass/lion.scss */
+.qa-nav-sub .qa-nav-sub-list {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+/* line 480, ../sass/lion.scss */
+.qa-nav-sub .qa-nav-sub-list .qa-nav-sub-item {
+  display: inline-block;
+}
+/* line 483, ../sass/lion.scss */
+.qa-nav-sub .qa-nav-sub-list .qa-nav-sub-item .qa-nav-sub-link {
+  line-height: 1;
+  display: block;
+  padding: 16px;
+}
+/* line 488, ../sass/lion.scss */
+.qa-nav-sub .qa-nav-sub-list .qa-nav-sub-item .qa-nav-sub-link.qa-nav-sub-selected {
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  padding-bottom: 14px;
+}
+
+/*****************************
+ q-lists section
+****************************/
+/* line 504, ../sass/lion.scss */
+.qa-q-list {
+  margin-bottom: 16px;
+}
+
+/* line 508, ../sass/lion.scss */
+.qa-q-list-item {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 16px;
+}
+/* line 512, ../sass/lion.scss */
+.qa-q-list-item .material-icons {
+  color: #747474;
+}
+/* line 516, ../sass/lion.scss */
+.qa-q-list-item .qa-q-item-main {
+  display: flex;
+  min-height: 68px;
+  position: relative;
+}
+/* line 523, ../sass/lion.scss */
+.qa-q-list-item .list-updates {
+  text-align: center;
+  float: left;
+  display: block;
+  margin-right: 16px;
+}
+/* line 536, ../sass/lion.scss */
+.qa-q-list-item .list-updates .qa-avatar-image {
+  width: 40px;
+  height: 40px !important;
+}
+/* line 541, ../sass/lion.scss */
+.qa-q-list-item .list-updates .material-icons {
+  margin-top: 12px;
+  display: block;
+  font-size: 16px;
+}
+/* line 549, ../sass/lion.scss */
+.qa-q-list-item .qa-q-item-title {
+  line-height: 1.4;
+  flex: 1;
+  margin-right: 16px;
+}
+/* line 553, ../sass/lion.scss */
+.qa-q-list-item .qa-q-item-title a {
+  color: #000;
+}
+/* line 558, ../sass/lion.scss */
+.qa-q-list-item .ans-box {
+  width: 34px;
+  text-align: center;
+  height: 100%;
+}
+/* line 563, ../sass/lion.scss */
+.qa-q-list-item .ans-box .ans-count {
+  font-size: 32px;
+  line-height: 1;
+  font: normal 100 32px/1 "Roboto-Light", Arial, Helvetica, sans-serif;
+  color: #9D4405;
+}
+/* line 570, ../sass/lion.scss */
+.qa-q-list-item .ans-box .q-more-btn {
+  cursor: pointer;
+}
+/* line 574, ../sass/lion.scss */
+.qa-q-list-item .ans-box .material-icons {
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  bottom: 0;
+  right: 8px;
+  z-index: 1;
+}
+/* line 585, ../sass/lion.scss */
+.qa-q-list-item .q-item-meta-data {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #f1f1f1;
+}
+/* line 590, ../sass/lion.scss */
+.qa-q-list-item .q-item-meta-data .qa-q-item-tags {
+  font-size: 12px;
+}
+/* line 595, ../sass/lion.scss */
+.qa-q-list-item .metas {
+  display: flex;
+  position: relative;
+  font-size: 12px;
+}
+/* line 601, ../sass/lion.scss */
+.qa-q-list-item .metas .update-info {
+  padding: 8px 16px 0 16px;
+  flex: 1;
+  border-width: 0 1px 0 1px;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-border-image: linear-gradient(to bottom, #f4f4f4 10%, #e7e7e7 50%, #ececec 90%);
+  -moz-border-image: linear-gradient(to bottom, #f4f4f4 10%, #e7e7e7 50%, #ececec 90%);
+  -o-border-image: linear-gradient(to bottom, #f4f4f4 10%, #e7e7e7 50%, #ececec 90%);
+  border-image: linear-gradient(to bottom, #f4f4f4 10%, #e7e7e7 50%, #ececec 90%);
+  border-image-slice: 1;
+}
+/* line 620, ../sass/lion.scss */
+.qa-q-list-item .qa-voting {
+  margin-left: -5px;
+  margin-top: 12px;
+  width: 50px;
+  height: 50px;
+}
+/* line 626, ../sass/lion.scss */
+.qa-q-list-item .qa-voting .qa-vote-count {
+  font: normal 100 18px/1 "Roboto-Light", Arial, Helvetica, sans-serif;
+  line-height: 50px;
+}
+/* line 633, ../sass/lion.scss */
+.qa-q-list-item .qa-view-count {
+  padding: 8px 0 0 16px;
+}
+/* line 636, ../sass/lion.scss */
+.qa-q-list-item .qa-view-count .qa-view-count-data {
+  font: normal 100 18px/1 "Roboto-Light", Arial, Helvetica, sans-serif;
+}
+/* line 640, ../sass/lion.scss */
+.qa-q-list-item .qa-view-count .qa-view-count-pad {
+  font-size: 8px;
+  margin-top: 8px;
+  line-height: 1;
+}
+
+/* line 649, ../sass/lion.scss */
+.qa-suggest-next {
+  margin: 16px;
+  padding: 16px;
+  background-color: #e7e7e7;
+  font-size: 12px;
+}
+
+/* line 660, ../sass/lion.scss */
+.q-item-moderate-content .qa-q-item-content {
+  font-size: 14px;
+  padding: 16px 0;
+  margin-top: 16px;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 669, ../sass/lion.scss */
+.q-item-moderate-content .qa-q-item-buttons .qa-form-light-button {
+  float: right;
+}
+/* line 673, ../sass/lion.scss */
+.q-item-moderate-content .qa-q-item-buttons .qa-form-light-button-delete {
+  color: #FF4646;
+}
+
+/*************************************
+  question answer comments common
+*************************************/
+/* line 682, ../sass/lion.scss */
+.qa-form-light-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 16px;
+}
+
+/* line 693, ../sass/lion.scss */
+.qa-q-view-footer, .a-item-footer, .qa-c-item-footer {
+  margin: 16px -16px -16px;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 698, ../sass/lion.scss */
+.qa-q-view-footer .qa-q-view-footer-inner, .qa-q-view-footer .a-item-footer-inner, .qa-q-view-footer .qa-c-item-footer-inner, .a-item-footer .qa-q-view-footer-inner, .a-item-footer .a-item-footer-inner, .a-item-footer .qa-c-item-footer-inner, .qa-c-item-footer .qa-q-view-footer-inner, .qa-c-item-footer .a-item-footer-inner, .qa-c-item-footer .qa-c-item-footer-inner {
+  display: flex;
+}
+/* line 702, ../sass/lion.scss */
+.qa-q-view-footer .qa-q-view-buttons, .qa-q-view-footer .qa-c-item-buttons, .qa-q-view-footer .qa-c-item-buttons, .a-item-footer .qa-q-view-buttons, .a-item-footer .qa-c-item-buttons, .a-item-footer .qa-c-item-buttons, .qa-c-item-footer .qa-q-view-buttons, .qa-c-item-footer .qa-c-item-buttons, .qa-c-item-footer .qa-c-item-buttons {
+  display: block;
+  flex: 1;
+}
+/* line 707, ../sass/lion.scss */
+.qa-q-view-footer .qa-form-light-button-answer, .a-item-footer .qa-form-light-button-answer, .qa-c-item-footer .qa-form-light-button-answer {
+  padding-right: 8px;
+}
+/* line 710, ../sass/lion.scss */
+.qa-q-view-footer .qa-form-light-button-comment, .a-item-footer .qa-form-light-button-comment, .qa-c-item-footer .qa-form-light-button-comment {
+  padding-left: 8px;
+}
+/* line 714, ../sass/lion.scss */
+.qa-q-view-footer .qa-q-more-buttons, .a-item-footer .qa-q-more-buttons, .qa-c-item-footer .qa-q-more-buttons {
+  display: inline-block;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 721, ../sass/lion.scss */
+.qa-q-view-footer .qa-q-more-buttons .material-icons, .a-item-footer .qa-q-more-buttons .material-icons, .qa-c-item-footer .qa-q-more-buttons .material-icons {
+  font-size: 14px;
+  padding: 16px;
+}
+/* line 727, ../sass/lion.scss */
+.qa-q-view-footer .qa-q-additional-buttons-model, .a-item-footer .qa-q-additional-buttons-model, .qa-c-item-footer .qa-q-additional-buttons-model {
+  display: none;
+  background-color: #f4f4f4;
+  height: auto;
+  border-top: 1px solid #e7e7e7;
+}
+/* line 734, ../sass/lion.scss */
+.qa-q-view-footer .qa-q-additional-buttons-model .qa-form-light-button, .a-item-footer .qa-q-additional-buttons-model .qa-form-light-button, .qa-c-item-footer .qa-q-additional-buttons-model .qa-form-light-button {
+  float: right;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  display: block;
+  text-align: left;
+  padding: 16px 16px;
+  text-transform: capitalize;
+  background-size: 16px auto;
+  border-left: 1px solid #e7e7e7;
+}
+/* line 746, ../sass/lion.scss */
+.qa-q-view-footer .qa-q-additional-buttons-model .qa-form-light-button:last-child, .a-item-footer .qa-q-additional-buttons-model .qa-form-light-button:last-child, .qa-c-item-footer .qa-q-additional-buttons-model .qa-form-light-button:last-child {
+  padding-bottom: 16px;
+}
+
+/* line 763, ../sass/lion.scss */
+.qa-q-view-main, .qa-a-list {
+  font-size: 14px;
+}
+
+/* line 771, ../sass/lion.scss */
+.qa-q-view-content h1, .qa-a-item-content h1, .qa-c-item-content h1, .qa-q-item-content h1 {
+  font: normal normal 24px/1 "Roboto-Medium", Arial, Helvetica, sans-serif;
+  margin: 0.5rem 0 1.2rem;
+}
+/* line 775, ../sass/lion.scss */
+.qa-q-view-content h2, .qa-a-item-content h2, .qa-c-item-content h2, .qa-q-item-content h2 {
+  font: normal normal 20px/1 "Roboto-Medium", Arial, Helvetica, sans-serif;
+  margin: 0.4rem 0 1.1rem;
+}
+/* line 779, ../sass/lion.scss */
+.qa-q-view-content h3, .qa-a-item-content h3, .qa-c-item-content h3, .qa-q-item-content h3 {
+  font: normal normal 16px/1 "Roboto-Medium", Arial, Helvetica, sans-serif;
+  margin: 0.3rem 0 1rem;
+}
+/* line 783, ../sass/lion.scss */
+.qa-q-view-content img, .qa-a-item-content img, .qa-c-item-content img, .qa-q-item-content img {
+  margin: 0 0 16px 0;
+}
+/* line 786, ../sass/lion.scss */
+.qa-q-view-content p, .qa-a-item-content p, .qa-c-item-content p, .qa-q-item-content p {
+  margin: 0.5rem 0 1rem;
+}
+/* line 789, ../sass/lion.scss */
+.qa-q-view-content p:first-of-type, .qa-a-item-content p:first-of-type, .qa-c-item-content p:first-of-type, .qa-q-item-content p:first-of-type {
+  margin-top: 0;
+}
+/* line 793, ../sass/lion.scss */
+.qa-q-view-content p img, .qa-a-item-content p img, .qa-c-item-content p img, .qa-q-item-content p img {
+  margin-bottom: 0;
+  vertical-align: bottom;
+}
+/* line 799, ../sass/lion.scss */
+.qa-q-view-content ul, .qa-q-view-content ol, .qa-a-item-content ul, .qa-a-item-content ol, .qa-c-item-content ul, .qa-c-item-content ol, .qa-q-item-content ul, .qa-q-item-content ol {
+  margin: 0 0 1.5rem;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+/* line 803, ../sass/lion.scss */
+.qa-q-view-content ul li, .qa-q-view-content ol li, .qa-a-item-content ul li, .qa-a-item-content ol li, .qa-c-item-content ul li, .qa-c-item-content ol li, .qa-q-item-content ul li, .qa-q-item-content ol li {
+  margin: 0 0 0.2rem 0;
+}
+/* line 806, ../sass/lion.scss */
+.qa-q-view-content ul li ul, .qa-q-view-content ul li ol, .qa-q-view-content ol li ul, .qa-q-view-content ol li ol, .qa-a-item-content ul li ul, .qa-a-item-content ul li ol, .qa-a-item-content ol li ul, .qa-a-item-content ol li ol, .qa-c-item-content ul li ul, .qa-c-item-content ul li ol, .qa-c-item-content ol li ul, .qa-c-item-content ol li ol, .qa-q-item-content ul li ul, .qa-q-item-content ul li ol, .qa-q-item-content ol li ul, .qa-q-item-content ol li ol {
+  margin: 0.2rem 0 0 2rem;
+}
+/* line 811, ../sass/lion.scss */
+.qa-q-view-content ol, .qa-a-item-content ol, .qa-c-item-content ol, .qa-q-item-content ol {
+  list-style-type: decimal;
+}
+/* line 815, ../sass/lion.scss */
+.qa-q-view-content blockquote, .qa-a-item-content blockquote, .qa-c-item-content blockquote, .qa-q-item-content blockquote {
+  padding: 16px;
+  background-color: #e7e7e7;
+  border-left: 5px solid #999999;
+  margin: 1rem 0 2rem;
+}
+/* line 822, ../sass/lion.scss */
+.qa-q-view-content blockquote p:last-of-type, .qa-a-item-content blockquote p:last-of-type, .qa-c-item-content blockquote p:last-of-type, .qa-q-item-content blockquote p:last-of-type {
+  margin-bottom: 0;
+}
+/* line 828, ../sass/lion.scss */
+.qa-q-view-content pre, .qa-a-item-content pre, .qa-c-item-content pre, .qa-q-item-content pre {
+  padding: 16px !important;
+  background-color: #e7e7e7 !important;
+  border: none !important;
+  line-height: 2;
+  margin: 1rem 0 2rem;
+  font-family: "Consolas", "courier new", "courier", serif, monospace;
+}
+/* line 837, ../sass/lion.scss */
+.qa-q-view-content b, .qa-q-view-content strong, .qa-a-item-content b, .qa-a-item-content strong, .qa-c-item-content b, .qa-c-item-content strong, .qa-q-item-content b, .qa-q-item-content strong {
+  font-family: "Roboto-Black", Arial, Helvetica, sans-serif;
+  font-width: 100;
+}
+/* line 842, ../sass/lion.scss */
+.qa-q-view-content i, .qa-q-view-content em, .qa-a-item-content i, .qa-a-item-content em, .qa-c-item-content i, .qa-c-item-content em, .qa-q-item-content i, .qa-q-item-content em {
+  font-family: "Roboto-Italic", Arial, Helvetica, sans-serif;
+}
+/* line 845, ../sass/lion.scss */
+.qa-q-view-content sup, .qa-q-view-content sub, .qa-a-item-content sup, .qa-a-item-content sub, .qa-c-item-content sup, .qa-c-item-content sub, .qa-q-item-content sup, .qa-q-item-content sub {
+  font-size: smaller;
+}
+/* line 848, ../sass/lion.scss */
+.qa-q-view-content sup, .qa-a-item-content sup, .qa-c-item-content sup, .qa-q-item-content sup {
+  vertical-align: super;
+}
+/* line 851, ../sass/lion.scss */
+.qa-q-view-content sub, .qa-a-item-content sub, .qa-c-item-content sub, .qa-q-item-content sub {
+  vertical-align: sub;
+}
+/* line 855, ../sass/lion.scss */
+.qa-q-view-content table, .qa-a-item-content table, .qa-c-item-content table, .qa-q-item-content table {
+  border-collapse: collapse;
+  margin: 16px auto;
+  width: 100%;
+}
+/* line 861, ../sass/lion.scss */
+.qa-q-view-content table caption, .qa-a-item-content table caption, .qa-c-item-content table caption, .qa-q-item-content table caption {
+  font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
+  margin: 0 0 8px;
+}
+/* line 871, ../sass/lion.scss */
+.qa-q-view-content table th, .qa-a-item-content table th, .qa-c-item-content table th, .qa-q-item-content table th {
+  font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
+  background-color: #e6e6e6;
+}
+/* line 876, ../sass/lion.scss */
+.qa-q-view-content table th, .qa-q-view-content table td, .qa-a-item-content table th, .qa-a-item-content table td, .qa-c-item-content table th, .qa-c-item-content table td, .qa-q-item-content table th, .qa-q-item-content table td {
+  padding: 8px;
+  border: 1px solid #e7e7e7;
+}
+
+/* line 883, ../sass/lion.scss */
+.qa-part-form-q-edit, .qa-part-a-form {
+  padding: 16px;
+  margin-top: -16px;
+}
+/* line 887, ../sass/lion.scss */
+.qa-part-form-q-edit .qa-form-tall-data, .qa-part-a-form .qa-form-tall-data {
+  width: 100%;
+}
+/* line 894, ../sass/lion.scss */
+.qa-part-form-q-edit .qa-a-form h2, .qa-part-a-form .qa-a-form h2 {
+  padding: 0 16px 16px 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/*****************************
+  question view section
+****************************/
+/* line 910, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header {
+  position: relative;
+  padding: 16px 16px 32px 16px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 917, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-feature-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  display: block;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+}
+/* line 932, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-feature-image img.qa-q-view-header-image {
+  width: auto !important;
+  height: 100% !important;
+  object-fit: cover;
+  filter: blur(3px);
+}
+/* line 941, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header a {
+  color: #fff;
+}
+/* line 945, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-q-details {
+  position: relative;
+  z-index: 1;
+}
+/* line 950, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-title {
+  font: normal 100 20px/1.4 "Roboto-Light", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 30px;
+}
+/* line 957, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .q-view-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+/* line 968, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-where .qa-q-view-where-pad {
+  display: none;
+}
+/* line 971, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-where .qa-q-view-where-data {
+  background-color: #009688;
+  padding: 4px 16px;
+  font: normal 100 14px/1.4 "Roboto-Light", Arial, Helvetica, sans-serif;
+  display: inline-block;
+  border-radius: 3px;
+}
+/* line 980, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-avatar-when {
+  text-align: center;
+  margin-top: 30px;
+}
+/* line 984, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-avatar-when .qa-q-view-avatar {
+  display: block;
+}
+/* line 988, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-avatar-when .qa-avatar-link {
+  display: inline-block;
+}
+/* line 993, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-avatar-when .qa-q-view-who, .qa-q-view .qa-q-view-header .qa-q-view-avatar-when .qa-q-view-what-when {
+  font-family: "Roboto-Light", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  display: block;
+  margin-bottom: 8px;
+}
+/* line 1003, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-voting {
+  width: auto;
+  float: left;
+}
+/* line 1007, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-voting .qa-vote-up-button, .qa-q-view .qa-q-view-header .qa-voting .qa-voted-up-button {
+  background-image: url('../images/icons/vote_up_white.svg?1533979654');
+  opacity: 0.5;
+}
+/* line 1012, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-voting .qa-vote-down-button, .qa-q-view .qa-q-view-header .qa-voting .qa-voted-down-button {
+  background-image: url('../images/icons/vote_down_white.svg?1533979654');
+  opacity: 0.5;
+}
+/* line 1017, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-voting .qa-vote-up-disabled {
+  background-image: url('../images/icons/vote_up_white.svg?1533979654');
+  opacity: 0.15;
+}
+/* line 1021, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-voting .qa-vote-down-disabled {
+  background-image: url('../images/icons/vote_down_white.svg?1533979654');
+  opacity: 0.15;
+}
+/* line 1028, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-view-count {
+  text-align: right;
+}
+/* line 1030, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-view-count .qa-view-count-pad {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* line 1035, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+/* line 1041, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-actions-vote, .qa-q-view .qa-q-view-header .qa-q-view-actions-favorite, .qa-q-view .qa-q-view-header .qa-q-view-actions-view {
+  display: block;
+}
+/* line 1044, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-actions-vote {
+  width: 60px;
+}
+/* line 1048, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-actions-favorite {
+  flex: 1;
+}
+/* line 1051, ../sass/lion.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-actions-view {
+  width: 60px;
+}
+/* line 1057, ../sass/lion.scss */
+.qa-q-view .qa-q-view-main-wrapper {
+  padding: 16px 16px 0 16px;
+  position: relative;
+}
+/* line 1062, ../sass/lion.scss */
+.qa-q-view .qa-q-view-main-wrapper .qa-q-view-main {
+  margin-top: -32px !important;
+}
+/* line 1068, ../sass/lion.scss */
+.qa-q-view .qa-q-view-tags {
+  margin: 24px 0;
+}
+/* line 1073, ../sass/lion.scss */
+.qa-q-view .qa-q-view-tags .qa-q-view-tag-list .qa-q-view-tag-item {
+  float: left;
+  margin: 0 4px 4px 0;
+}
+
+/*****************************
+ answer section
+****************************/
+/* line 1088, ../sass/lion.scss */
+#a_list_title {
+  padding: 0 16px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* line 1095, ../sass/lion.scss */
+.qa-a-list {
+  padding: 16px;
+}
+/* line 1101, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item:last-child {
+  margin-bottom: 0 !important;
+}
+/* line 1105, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item .qa-a-item-avatar-meta {
+  display: flex;
+  font-size: 12px;
+  margin: -16px -16px 0 -16px;
+  padding: 16px;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 1113, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item .qa-a-item-avatar {
+  flex: 0;
+}
+/* line 1115, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item .qa-a-item-avatar .qa-avatar-link {
+  margin-right: 8px;
+}
+/* line 1120, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item .qa-a-item-meta {
+  line-height: inherit;
+}
+/* line 1124, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item .a-vote-select-box {
+  margin: 0 -16px;
+  padding: 16px;
+}
+/* line 1129, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item .a-vote-select-box .qa-voting {
+  float: left;
+  margin-left: -8px;
+}
+/* line 1134, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item .a-vote-select-box .qa-a-selection {
+  float: right;
+  position: relative;
+}
+/* line 1138, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item .a-vote-select-box .qa-a-selection .qa-waiting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -12px 0 0 -12px;
+}
+/* line 1145, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item .a-vote-select-box .qa-a-selection .qa-a-select-button, .qa-a-list .qa-a-list-item .a-vote-select-box .qa-a-selection .qa-a-unselect-button {
+  background-size: cover;
+  width: 36px;
+  height: 36px;
+  display: block;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  padding: 0;
+}
+/* line 1156, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item .a-vote-select-box .qa-a-selection .qa-a-select-button {
+  background-image: url('../images/icons/select_answer.svg?1533979654');
+}
+/* line 1159, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item .a-vote-select-box .qa-a-selection .qa-a-unselect-button {
+  background-image: url('../images/icons/selected_answer.svg?1533979654');
+}
+/* line 1162, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item .a-vote-select-box .qa-a-selection .qa-a-selected-text {
+  display: none;
+}
+/* line 1168, ../sass/lion.scss */
+.qa-a-list .qa-a-list-item.qa-a-list-item-selected {
+  border-width: 5px 1px 1px 1px;
+  border-style: solid;
+}
+
+/*****************************
+ comment section
+****************************/
+/* line 1178, ../sass/lion.scss */
+.qa-q-view-c-list, .qa-a-item-c-list {
+  margin: -16px;
+}
+/* line 1181, ../sass/lion.scss */
+.qa-q-view-c-list .qa-c-list-item, .qa-a-item-c-list .qa-c-list-item {
+  padding: 16px;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 1185, ../sass/lion.scss */
+.qa-q-view-c-list .qa-c-list-item:first-child, .qa-a-item-c-list .qa-c-list-item:first-child {
+  margin-top: 16px;
+}
+/* line 1189, ../sass/lion.scss */
+.qa-q-view-c-list .qa-c-list-item:nth-child(odd), .qa-a-item-c-list .qa-c-list-item:nth-child(odd) {
+  background-color: #e7e7e7;
+}
+/* line 1192, ../sass/lion.scss */
+.qa-q-view-c-list .qa-c-list-item:nth-child(even), .qa-a-item-c-list .qa-c-list-item:nth-child(even) {
+  background-color: #f4f4f4;
+}
+/* line 1197, ../sass/lion.scss */
+.qa-q-view-c-list .qa-c-item-avatar-meta, .qa-a-item-c-list .qa-c-item-avatar-meta {
+  display: block;
+  font-size: 12px;
+  padding: 16px;
+  margin: 0 -16px 16px -16px;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 1206, ../sass/lion.scss */
+.qa-q-view-c-list .qa-c-item-avatar-meta:first-of-type, .qa-a-item-c-list .qa-c-item-avatar-meta:first-of-type {
+  border-top: none;
+  margin-top: -16px;
+}
+/* line 1211, ../sass/lion.scss */
+.qa-q-view-c-list .qa-c-item-avatar-meta .qa-c-item-avatar, .qa-a-item-c-list .qa-c-item-avatar-meta .qa-c-item-avatar {
+  float: left;
+  margin-right: 8px;
+}
+/* line 1217, ../sass/lion.scss */
+.qa-q-view-c-list .qa-c-item-avatar-meta .qa-c-item-meta, .qa-a-item-c-list .qa-c-item-avatar-meta .qa-c-item-meta {
+  float: left;
+  line-height: inherit;
+}
+
+/* line 1224, ../sass/lion.scss */
+.qa-c-form {
+  margin-top: 32px;
+}
+/* line 1227, ../sass/lion.scss */
+.qa-c-form h2 {
+  font: normal normal 14px/1.4 "Roboto-Medium", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+/*****************************
+ pagination section
+****************************/
+/* line 1236, ../sass/lion.scss */
+.qa-page-links {
+  padding: 16px 0;
+  text-align: center;
+}
+/* line 1241, ../sass/lion.scss */
+.qa-page-links .qa-page-links-label {
+  display: none;
+}
+/* line 1245, ../sass/lion.scss */
+.qa-page-links ul {
+  display: inline-block;
+}
+/* line 1248, ../sass/lion.scss */
+.qa-page-links ul.qa-page-links-list {
+  text-align: center;
+}
+/* line 1253, ../sass/lion.scss */
+.qa-page-links ul li.qa-page-links-item {
+  display: inline-block;
+}
+/* line 1257, ../sass/lion.scss */
+.qa-page-links ul li.qa-page-links-item .qa-page-selected, .qa-page-links ul li.qa-page-links-item .qa-page-link, .qa-page-links ul li.qa-page-links-item .qa-page-ellipsis, .qa-page-links ul li.qa-page-links-item .qa-page-prev, .qa-page-links ul li.qa-page-links-item .qa-page-next {
+  display: block;
+  line-height: 1;
+  font-size: 12px;
+  min-width: 28px;
+  padding: 8px;
+  background-color: #e7e7e7;
+  color: #747474;
+  text-transform: capitalize;
+}
+/* line 1268, ../sass/lion.scss */
+.qa-page-links ul li.qa-page-links-item .qa-page-selected {
+  background-color: #7A532E;
+  color: #fff;
+}
+
+/*****************************
+ buttons section
+****************************/
+/* line 1291, ../sass/lion.scss */
+.floating-btn a {
+  width: 56px;
+  height: 56px;
+  display: block;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1;
+  background-color: #7A532E;
+  color: #fff;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.24);
+}
+/* line 1305, ../sass/lion.scss */
+.floating-btn a .material-icons {
+  line-height: 56px;
+}
+
+/* line 1311, ../sass/lion.scss */
+.button-tap, .account-box a.action-item, .topbar .menu, .topbar ul.auth, .topbar .search {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  padding: 12px;
+}
+
+/*****************************
+ sidebar and widgets section
+****************************/
+/* line 1321, ../sass/lion.scss */
+.card, .qa-part-form-q-edit .qa-a-form, .qa-part-a-form .qa-a-form, .qa-q-view .qa-q-view-main-wrapper .qa-q-view-main, .qa-a-list .qa-a-list-item, .qa-sidepanel .qa-sidebar, .qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-item, .qa-template-user .qa-part-message-list .qa-message-list-form, .qa-template-account .qa-part-message-list .qa-message-list-form, .qa-template-user .qa-part-message-list .qa-message-list .qa-message-item, .qa-template-account .qa-part-message-list .qa-message-list .qa-message-item, .qa-part-message-list .qa-message-list-form, .qa-part-message-list .qa-message-list .qa-message-item {
+  padding: 16px;
+  margin: 0 0 1rem 0;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* line 1328, ../sass/lion.scss */
+.qa-sidepanel {
+  margin: 16px 0;
+  padding: 0 16px;
+}
+/* line 1334, ../sass/lion.scss */
+.qa-sidepanel .qa-sidebar a {
+  text-transform: uppercase;
+}
+/* line 1339, ../sass/lion.scss */
+.qa-sidepanel .qa-widget-side, .qa-sidepanel .qa-feed, .qa-sidepanel .qa-nav-cat {
+  padding: 16px;
+  margin: 0 0 1rem 0;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+/* line 1343, ../sass/lion.scss */
+.qa-sidepanel .qa-feed {
+  background: url('../images/icons/feed.svg?1533979654') no-repeat 16px center;
+  padding-left: 32px;
+}
+/* line 1347, ../sass/lion.scss */
+.qa-sidepanel .qa-feed a {
+  color: #000;
+  padding-left: 16px;
+  display: block;
+}
+/* line 1354, ../sass/lion.scss */
+.qa-sidepanel .qa-activity-count {
+  margin: -16px;
+}
+/* line 1358, ../sass/lion.scss */
+.qa-sidepanel .qa-activity-count .qa-activity-count-item {
+  width: 50%;
+  float: left;
+  display: block;
+  font-size: 80%;
+  padding: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  border-style: solid;
+}
+/* line 1368, ../sass/lion.scss */
+.qa-sidepanel .qa-activity-count .qa-activity-count-item:nth-child(1) {
+  border-width: 0 1px 1px 0;
+}
+/* line 1371, ../sass/lion.scss */
+.qa-sidepanel .qa-activity-count .qa-activity-count-item:nth-child(2) {
+  border-width: 0 0 1px 0;
+}
+/* line 1374, ../sass/lion.scss */
+.qa-sidepanel .qa-activity-count .qa-activity-count-item:nth-child(3) {
+  border-width: 0 1px 0 0;
+}
+/* line 1379, ../sass/lion.scss */
+.qa-sidepanel .qa-activity-count .qa-activity-count-data {
+  font: normal normal 32px/1.6 "Roboto-Black", Arial, Helvetica, sans-serif;
+  display: block;
+}
+/* line 1386, ../sass/lion.scss */
+.qa-sidepanel .qa-widget-side h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: -16px !important;
+  margin-bottom: 16px !important;
+  padding: 16px !important;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 1398, ../sass/lion.scss */
+.qa-sidepanel .qa-widget-side > div > a {
+  margin-bottom: 8px;
+}
+/* line 1405, ../sass/lion.scss */
+.qa-sidepanel .qa-nav-cat-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 1411, ../sass/lion.scss */
+.qa-sidepanel .qa-nav-cat-item {
+  padding: 8px 0;
+}
+/* line 1414, ../sass/lion.scss */
+.qa-sidepanel .qa-nav-cat-item ul {
+  margin-top: 8px;
+  margin-left: 16px;
+}
+/* line 1419, ../sass/lion.scss */
+.qa-sidepanel .qa-nav-cat-item ul li:last-child {
+  padding-bottom: 0;
+}
+/* line 1425, ../sass/lion.scss */
+.qa-sidepanel .qa-nav-cat-link {
+  color: #2A2A2A;
+}
+/* line 1428, ../sass/lion.scss */
+.qa-sidepanel .qa-nav-cat-note {
+  float: right;
+  color: #dddddd;
+}
+/* line 1433, ../sass/lion.scss */
+.qa-sidepanel .qa-related-q-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 1438, ../sass/lion.scss */
+.qa-sidepanel .qa-related-q-list .qa-related-q-item {
+  padding: 8px 0;
+}
+/* line 1441, ../sass/lion.scss */
+.qa-sidepanel .qa-related-q-list .qa-related-q-item a {
+  color: #2A2A2A;
+}
+/* line 1447, ../sass/lion.scss */
+.qa-sidepanel .qa-ask-box {
+  margin: -16px;
+}
+
+/*************************************
+  tags section
+*************************************/
+/* line 1457, ../sass/lion.scss */
+.qa-template-tags .qa-part-ranking {
+  padding: 16px;
+}
+/* line 1461, ../sass/lion.scss */
+.qa-template-tags .qa-part-ranking .qa-ranking-item {
+  float: left;
+  width: 48%;
+  margin-bottom: 12px;
+  margin-right: 4%;
+  text-align: center;
+}
+/* line 1468, ../sass/lion.scss */
+.qa-template-tags .qa-part-ranking .qa-ranking-item:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 1472, ../sass/lion.scss */
+.qa-template-tags .qa-part-ranking .qa-top-tags-count {
+  float: left;
+  width: 30%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  border-radius: 3px 0 0 3px;
+  position: relative;
+}
+/* line 1481, ../sass/lion.scss */
+.qa-template-tags .qa-part-ranking .qa-top-tags-count:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  border-radius: 3px 0 0 0;
+}
+/* line 1491, ../sass/lion.scss */
+.qa-template-tags .qa-part-ranking .qa-top-tags-label {
+  float: left;
+  display: block;
+  width: 70%;
+  border-radius: 0 3px 3px 0;
+}
+/* line 1497, ../sass/lion.scss */
+.qa-template-tags .qa-part-ranking .qa-top-tags-label .qa-tag-link {
+  display: block;
+  border-radius: 0;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+/*******************************
+ categories section
+*******************************/
+/* line 1516, ../sass/lion.scss */
+.qa-template-categories .qa-part-nav-list {
+  padding: 16px;
+}
+/* line 1522, ../sass/lion.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-item {
+  margin: 0 0 16px 0;
+  padding-bottom: 52px;
+  position: relative;
+}
+/* line 1530, ../sass/lion.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-item:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 1534, ../sass/lion.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-item .qa-browse-cat-link, .qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-item .qa-browse-cat-nolink {
+  display: block;
+  font: normal 100 24px/1.3 "Roboto", Arial, Helvetica, sans-serif;
+  padding: 16px;
+  margin: -16px -16px 0 -16px;
+  text-transform: capitalize;
+  color: #000;
+}
+/* line 1549, ../sass/lion.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-item .qa-browse-cat-note {
+  display: block;
+  padding: 16px;
+  margin: 0 -16px;
+  font-size: 14px;
+}
+/* line 1555, ../sass/lion.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-item .qa-browse-cat-note a {
+  display: block;
+  background-color: #f4f4f4;
+  padding: 16px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  text-transform: uppercase;
+}
+/* line 1571, ../sass/lion.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-closed .qa-browse-cat-link, .qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-closed .qa-browse-cat-nolink {
+  background-color: #e7e7e7;
+}
+/* line 1576, ../sass/lion.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-open {
+  border: 1px solid #c5a788;
+  border-top: none;
+}
+/* line 1579, ../sass/lion.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-open .qa-browse-cat-link, .qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-open .qa-browse-cat-nolink {
+  background-color: #c5a788;
+}
+
+/*******************************
+ users section
+*******************************/
+/* line 1597, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item {
+  display: block;
+  width: calc(33.33% - 2px);
+  float: left;
+  margin: 1px;
+  background-color: #e6e6e6;
+  position: relative;
+  font-size: 12px;
+}
+/* line 1606, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item:nth-child(3n+1) {
+  margin-left: 1px;
+}
+/* line 1610, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item.userrank-1 {
+  width: 100%;
+  margin: 0;
+  float: none;
+}
+/* line 1616, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item.userrank-2, .qa-template-users .qa-part-ranking .qa-ranking-item.userrank-3 {
+  width: calc(50% - 2px);
+  margin: 1px;
+}
+/* line 1630, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item .qa-avatar-link {
+  display: block;
+  line-height: 1;
+}
+/* line 1634, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item .qa-avatar-link span {
+  width: 100%;
+  display: block;
+}
+/* line 1639, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item .qa-avatar-image {
+  width: 100%;
+  height: auto;
+}
+/* line 1644, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item .qa-top-users-label {
+  display: block;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 30px;
+  left: 0;
+}
+/* line 1652, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item .qa-user-link {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 1vh 3vw 0;
+}
+/* line 1659, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item .qa-top-users-score {
+  display: block;
+  position: absolute;
+  height: 30px;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 0 3vw 1vh;
+}
+/* line 1675, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item.userrank-1 .qa-top-users-label {
+  bottom: 40px;
+}
+/* line 1679, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item.userrank-1 .qa-user-link {
+  font-size: 20px;
+  padding: 1vh 5vw 0;
+}
+/* line 1684, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item.userrank-1 .qa-top-users-score {
+  font-size: 20px;
+  height: 40px;
+  padding: 0 5vw 1vh;
+}
+/* line 1698, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item.userrank-2 .qa-user-link, .qa-template-users .qa-part-ranking .qa-ranking-item.userrank-3 .qa-user-link {
+  font-size: 14px;
+  padding: 1vh 4vw 0;
+}
+/* line 1703, ../sass/lion.scss */
+.qa-template-users .qa-part-ranking .qa-ranking-item.userrank-2 .qa-top-users-score, .qa-template-users .qa-part-ranking .qa-ranking-item.userrank-3 .qa-top-users-score {
+  font-size: 14px;
+  padding: 0 4vw 1vh;
+}
+/* line 1714, ../sass/lion.scss */
+.qa-template-users.users-new .qa-part-ranking .qa-ranking-item .qa-top-users-label, .qa-template-users.users-special .qa-part-ranking .qa-ranking-item .qa-top-users-label, .qa-template-users.users-blocked .qa-part-ranking .qa-ranking-item .qa-top-users-label {
+  position: relative;
+  top: auto;
+  bottom: auto;
+}
+/* line 1719, ../sass/lion.scss */
+.qa-template-users.users-new .qa-part-ranking .qa-ranking-item .qa-user-link, .qa-template-users.users-special .qa-part-ranking .qa-ranking-item .qa-user-link, .qa-template-users.users-blocked .qa-part-ranking .qa-ranking-item .qa-user-link {
+  background-color: #e7e7e7;
+  color: #000;
+}
+/* line 1724, ../sass/lion.scss */
+.qa-template-users.users-new .qa-part-ranking .qa-ranking-item .qa-top-users-score, .qa-template-users.users-special .qa-part-ranking .qa-ranking-item .qa-top-users-score, .qa-template-users.users-blocked .qa-part-ranking .qa-ranking-item .qa-top-users-score {
+  background-color: #e7e7e7;
+  color: #747474;
+  position: relative;
+  top: auto;
+  bottom: auto;
+}
+
+/*******************************
+ user profile section
+*******************************/
+/* line 1741, ../sass/lion.scss */
+.qa-template-user [class^="qa-part-form"], .qa-template-user [class^="qa-part-custom"], .qa-template-account [class^="qa-part-form"], .qa-template-account [class^="qa-part-custom"] {
+  padding: 0;
+  width: 100%;
+  display: block;
+}
+/* line 1748, ../sass/lion.scss */
+.qa-template-user #avatar .qa-form-tall-data, .qa-template-account #avatar .qa-form-tall-data {
+  padding: 0;
+}
+/* line 1752, ../sass/lion.scss */
+.qa-template-user #avatar .qa-avatar-link, .qa-template-account #avatar .qa-avatar-link {
+  display: block;
+  line-height: 1;
+}
+/* line 1756, ../sass/lion.scss */
+.qa-template-user #avatar .qa-avatar-link span, .qa-template-account #avatar .qa-avatar-link span {
+  padding: 0 !important;
+}
+/* line 1760, ../sass/lion.scss */
+.qa-template-user #avatar .qa-avatar-link .qa-avatar-image, .qa-template-account #avatar .qa-avatar-link .qa-avatar-image {
+  width: 100%;
+}
+/* line 1766, ../sass/lion.scss */
+.qa-template-user .qa-part-form-profile, .qa-template-user .qa-part-form-activity, .qa-template-account .qa-part-form-profile, .qa-template-account .qa-part-form-activity {
+  font-size: 14px;
+}
+/* line 1774, ../sass/lion.scss */
+.qa-template-user .qa-form-wide-label, .qa-template-account .qa-form-wide-label {
+  font-size: 14px;
+  width: 35%;
+  padding: 8px 8px 8px 16px;
+  text-align: right;
+}
+/* line 1781, ../sass/lion.scss */
+.qa-template-user .qa-form-wide-data, .qa-template-account .qa-form-wide-data {
+  font-size: 14px;
+  width: 65%;
+  padding: 8px 16px 8px 8px;
+  word-break: break-word;
+}
+/* line 1788, ../sass/lion.scss */
+.qa-template-user .qa-form-wide-buttons, .qa-template-account .qa-form-wide-buttons {
+  padding: 16px;
+}
+/* line 1798, ../sass/lion.scss */
+.qa-template-user .qa-part-message-list .qa-message-list-form, .qa-template-account .qa-part-message-list .qa-message-list-form {
+  margin: 16px;
+}
+/* line 1803, ../sass/lion.scss */
+.qa-template-user .qa-part-message-list .qa-message-list, .qa-template-account .qa-part-message-list .qa-message-list {
+  padding: 0 16px;
+}
+/* line 1810, ../sass/lion.scss */
+.qa-template-user .qa-part-message-list .qa-message-list .qa-message-content, .qa-template-account .qa-part-message-list .qa-message-list .qa-message-content {
+  font-size: 14px;
+}
+/* line 1814, ../sass/lion.scss */
+.qa-template-user .qa-part-message-list .qa-message-list .qa-message-avatar-meta, .qa-template-account .qa-part-message-list .qa-message-list .qa-message-avatar-meta {
+  display: block;
+  font-size: 12px;
+  margin-top: 16px;
+  padding: 16px 0;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 1823, ../sass/lion.scss */
+.qa-template-user .qa-part-message-list .qa-message-list .qa-message-avatar, .qa-template-account .qa-part-message-list .qa-message-list .qa-message-avatar {
+  display: block;
+  float: left;
+  margin-right: 8px;
+}
+/* line 1828, ../sass/lion.scss */
+.qa-template-user .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-template-account .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link {
+  display: block;
+}
+/* line 1832, ../sass/lion.scss */
+.qa-template-user .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-template-account .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image {
+  vertical-align: bottom;
+}
+/* line 1841, ../sass/lion.scss */
+.qa-template-user .qa-part-message-list .qa-message-list .qa-message-buttons, .qa-template-account .qa-part-message-list .qa-message-list .qa-message-buttons {
+  text-align: right;
+}
+
+/*******************************
+ private message section
+*******************************/
+/* line 1859, ../sass/lion.scss */
+.qa-part-message-list .qa-message-list-form, .qa-part-message-list .qa-message-list-form {
+  margin: 16px;
+}
+/* line 1864, ../sass/lion.scss */
+.qa-part-message-list .qa-message-list, .qa-part-message-list .qa-message-list, .qa-part-message-list .qa-message-list, .qa-part-message-list .qa-message-list {
+  padding: 0 16px;
+}
+/* line 1871, ../sass/lion.scss */
+.qa-part-message-list .qa-message-list .qa-message-content, .qa-part-message-list .qa-message-list .qa-message-content, .qa-part-message-list .qa-message-list .qa-message-content, .qa-part-message-list .qa-message-list .qa-message-content, .qa-part-message-list .qa-message-list .qa-message-content, .qa-part-message-list .qa-message-list .qa-message-content, .qa-part-message-list .qa-message-list .qa-message-content, .qa-part-message-list .qa-message-list .qa-message-content {
+  font-size: 14px;
+}
+/* line 1874, ../sass/lion.scss */
+.qa-part-message-list .qa-message-list .qa-message-content a, .qa-part-message-list .qa-message-list .qa-message-content a, .qa-part-message-list .qa-message-list .qa-message-content a, .qa-part-message-list .qa-message-list .qa-message-content a, .qa-part-message-list .qa-message-list .qa-message-content a, .qa-part-message-list .qa-message-list .qa-message-content a, .qa-part-message-list .qa-message-list .qa-message-content a, .qa-part-message-list .qa-message-list .qa-message-content a {
+  word-break: break-all;
+}
+/* line 1879, ../sass/lion.scss */
+.qa-part-message-list .qa-message-list .qa-message-avatar-meta, .qa-part-message-list .qa-message-list .qa-message-avatar-meta, .qa-part-message-list .qa-message-list .qa-message-avatar-meta, .qa-part-message-list .qa-message-list .qa-message-avatar-meta, .qa-part-message-list .qa-message-list .qa-message-avatar-meta, .qa-part-message-list .qa-message-list .qa-message-avatar-meta, .qa-part-message-list .qa-message-list .qa-message-avatar-meta, .qa-part-message-list .qa-message-list .qa-message-avatar-meta {
+  display: block;
+  font-size: 12px;
+  margin-top: 16px;
+  padding: 16px 0;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+/* line 1888, ../sass/lion.scss */
+.qa-part-message-list .qa-message-list .qa-message-avatar, .qa-part-message-list .qa-message-list .qa-message-avatar, .qa-part-message-list .qa-message-list .qa-message-avatar, .qa-part-message-list .qa-message-list .qa-message-avatar, .qa-part-message-list .qa-message-list .qa-message-avatar, .qa-part-message-list .qa-message-list .qa-message-avatar, .qa-part-message-list .qa-message-list .qa-message-avatar, .qa-part-message-list .qa-message-list .qa-message-avatar {
+  display: block;
+  float: left;
+  margin-right: 8px;
+}
+/* line 1893, ../sass/lion.scss */
+.qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-link {
+  display: block;
+}
+/* line 1897, ../sass/lion.scss */
+.qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image, .qa-part-message-list .qa-message-list .qa-message-avatar .qa-avatar-image {
+  vertical-align: bottom;
+}
+/* line 1906, ../sass/lion.scss */
+.qa-part-message-list .qa-message-list .qa-message-buttons, .qa-part-message-list .qa-message-list .qa-message-buttons, .qa-part-message-list .qa-message-list .qa-message-buttons, .qa-part-message-list .qa-message-list .qa-message-buttons, .qa-part-message-list .qa-message-list .qa-message-buttons, .qa-part-message-list .qa-message-list .qa-message-buttons, .qa-part-message-list .qa-message-list .qa-message-buttons, .qa-part-message-list .qa-message-list .qa-message-buttons {
+  text-align: right;
+}
+
+/* line 1914, ../sass/lion.scss */
+.qa-template-messages .qa-part-custom {
+  padding: 16px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+/*******************************
+ form fields and table section
+*******************************/
+/* line 1957, ../sass/lion.scss */
+.button-default, .qa-auth-box .qa-form-tall-button-login, .qa-auth-box .qa-nav-user-register .qa-nav-user-link {
+  background: #fff;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font: normal normal 14px/1 "Roboto-Medium", Arial, Helvetica, sans-serif;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  -webkit-appearance: none;
+}
+/* line 1967, ../sass/lion.scss */
+.button-default:hover, .qa-auth-box .qa-form-tall-button-login:hover, .qa-auth-box .qa-nav-user-register .qa-nav-user-link:hover, .button-default:focus, .qa-auth-box .qa-form-tall-button-login:focus, .qa-auth-box .qa-nav-user-register .qa-nav-user-link:focus, .button-default:active, .qa-auth-box .qa-form-tall-button-login:active, .qa-auth-box .qa-nav-user-register .qa-nav-user-link:active {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* line 1973, ../sass/lion.scss */
+.button-primary, .qa-form-tall-button, .qa-form-wide-button, .qa-form-basic-button {
+  background: #7A532E;
+  color: #fff;
+}
+
+/* line 1978, ../sass/lion.scss */
+.button-secondary {
+  background: #CB8D4F;
+  color: #fff;
+}
+
+/* line 1983, ../sass/lion.scss */
+.button-success, .qa-form-tall-button-save, .qa-form-wide-button-save, .qa-form-wide-button-saverecalc, .qa-form-tall-button-ask, .qa-form-tall-button-answer, .qa-form-wide-button-change, .qa-form-tall-button-comment, .qa-form-tall-button-send, .qa-auth-box .qa-form-tall-button-login {
+  background: #009688;
+  color: #fff;
+}
+
+/* line 1988, ../sass/lion.scss */
+.button-gray, .qa-auth-box .qa-nav-user-register .qa-nav-user-link {
+  background: #e7e7e7;
+  color: #000;
+}
+
+/* line 1993, ../sass/lion.scss */
+.button-danger, .qa-form-tall-button-cancel, .qa-form-wide-button-cancel {
+  background: #FF4646;
+  color: #fff;
+}
+
+/* line 2010, ../sass/lion.scss */
+.qa-form-tall-table, .qa-form-wide-table {
+  width: 100%;
+}
+
+/*------[ forms ]------*/
+/* line 2015, ../sass/lion.scss */
+*[class$="label"] {
+  font-family: "Roboto-Medium", Arial, Helvetica, sans-serif;
+}
+
+/* line 2021, ../sass/lion.scss */
+*[class$="table"] input, *[class$="table"] textarea, *[class$="table"] select {
+  margin: 8px 0;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #999999;
+  font: inherit;
+  transition: all 0.3s;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+/* line 2031, ../sass/lion.scss */
+*[class$="table"] textarea {
+  border: 1px solid #e7e7e7;
+  border-bottom: 1px solid #999999;
+}
+/* line 2036, ../sass/lion.scss */
+*[class$="table"] input[type="submit"] {
+  padding: 8px 16px;
+}
+
+/* line 2041, ../sass/lion.scss */
+input[type="text"], input[type="password"], input[type="email"], select, textarea {
+  width: 100%;
+}
+
+/* line 2045, ../sass/lion.scss */
+input:focus, textarea:focus, select:focus {
+  border-color: #7A532E;
+  outline: 0;
+}
+
+/* line 2050, ../sass/lion.scss */
+input::-moz-focus-inner, textarea::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* line 2057, ../sass/lion.scss */
+select::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+/* line 2062, ../sass/lion.scss */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* line 2068, ../sass/lion.scss */
+input[type="submit"], button {
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 2073, ../sass/lion.scss */
+[class^="qa-part-form"], [class^="qa-part-custom"] {
+  padding: 16px;
+  margin-bottom: 8px;
+  background: #fff;
+}
+
+/* line 2079, ../sass/lion.scss */
+[class^="qa-part-form"] > h2:first-child, [class^="qa-part-custom"] > h2:first-child {
+  margin-top: 0;
+}
+
+/* line 2083, ../sass/lion.scss */
+.qa-form-tall-text {
+  width: 100%;
+}
+
+/* line 2087, ../sass/lion.scss */
+.qa-form-tall-number, .qa-form-wide-number {
+  width: 50px !important;
+}
+
+/* line 2091, ../sass/lion.scss */
+.qa-form-tall-suffix, .qa-form-tall-note, .qa-form-wide-note {
+  font-size: 12px;
+}
+
+/* line 2099, ../sass/lion.scss */
+.qa-form-wide-note {
+  text-align: right;
+}
+
+/* line 2103, ../sass/lion.scss */
+.qa-form-tall-note {
+  margin: 16px 0 8px;
+}
+
+/* line 2119, ../sass/lion.scss */
+.qa-form-wide-label, .qa-form-wide-data, .qa-form-tall-spacer {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+/* line 2124, ../sass/lion.scss */
+.qa-form-tall-label {
+  padding: 8px 0 0;
+}
+
+/* line 2128, ../sass/lion.scss */
+.qa-form-tall-data {
+  padding: 8px 0;
+}
+
+/* line 2132, ../sass/lion.scss */
+.qa-form-wide-label {
+  padding-right: 8px;
+}
+
+/* line 2136, ../sass/lion.scss */
+.qa-form-wide-data {
+  padding-left: 8px;
+}
+
+/* line 2140, ../sass/lion.scss */
+.qa-form-wide-text {
+  width: 100%;
+}
+
+/* line 2144, ../sass/lion.scss */
+.qa-form-tall-ok, .qa-form-wide-ok {
+  background-color: #27ae60;
+  padding: 10px;
+  display: table-cell;
+  color: #fff;
+}
+
+/* line 2151, ../sass/lion.scss */
+.qa-form-wide-error, .qa-form-tall-error {
+  color: #e74c3c;
+}
+
+/* line 2155, ../sass/lion.scss */
+.qa-form-tall-spacer {
+  display: block;
+  margin: 20px 0 19px 0;
+  padding: 0;
+  border-top: none;
+  line-height: 0;
+}
+
+/* line 2163, ../sass/lion.scss */
+.qa-form-tall-help, .qa-form-wide-help {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-left: 4px;
+  border-radius: 18px;
+  background-color: #CB8D4F;
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  cursor: help;
+}
+
+/* line 2177, ../sass/lion.scss */
+.qa-ask-similar {
+  background-color: #e7e7e7;
+  padding: 16px;
+  margin-bottom: 8px;
+}
+/* line 2183, ../sass/lion.scss */
+.qa-ask-similar .qa-q-title-list .qa-q-title-item {
+  margin-bottom: 8px;
+  border: none;
+}
+/* line 2186, ../sass/lion.scss */
+.qa-ask-similar .qa-q-title-list .qa-q-title-item a {
+  font-size: 14px;
+  color: #000;
+  display: block;
+}
+
+/* line 2195, ../sass/lion.scss */
+.qa-ask-similar-title {
+  margin: -16px -16px 16px;
+  padding: 16px;
+  background: #CB8D4F;
+  color: #fff;
+}
+/* line 2200, ../sass/lion.scss */
+.qa-ask-similar-title a {
+  color: #fff;
+}
+/* line 2202, ../sass/lion.scss */
+.qa-ask-similar-title a:hover {
+  color: #fff;
+}
+
+/* line 2208, ../sass/lion.scss */
+.qa-q-title-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 2214, ../sass/lion.scss */
+.qa-q-title-item {
+  padding: 2px 0;
+  border-bottom: 1px solid #d9dcde;
+}
+/* line 2217, ../sass/lion.scss */
+.qa-q-title-item:last-child {
+  border-bottom: none;
+}
+
+/*******************************
+  login form modal section
+*******************************/
+/* line 2227, ../sass/lion.scss */
+.qa-auth-box .qa-auth-box-items {
+  padding: 16px 16px 48px 16px;
+  position: relative;
+}
+/* line 2232, ../sass/lion.scss */
+.qa-auth-box input[type="text"], .qa-auth-box input[type="email"], .qa-auth-box input[type="password"] {
+  padding: 16px;
+  margin: 0 auto 16px;
+  border: 1px solid #e7e7e7;
+  background-color: #f4f4f4;
+}
+/* line 2238, ../sass/lion.scss */
+.qa-auth-box input[type="text"]:focus, .qa-auth-box input[type="email"]:focus, .qa-auth-box input[type="password"]:focus {
+  border-color: #CB8D4F;
+}
+/* line 2243, ../sass/lion.scss */
+.qa-auth-box input[type="checkbox"] {
+  display: inline-block;
+}
+/* line 2247, ../sass/lion.scss */
+.qa-auth-box .checkbox {
+  display: block;
+  margin: 0 0 16px;
+}
+/* line 2252, ../sass/lion.scss */
+.qa-auth-box .qa-form-tall-button-login {
+  border-radius: 0;
+  border: none;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 14px;
+  line-height: 42px;
+  height: 42px;
+  padding: 2px;
+  display: block;
+}
+/* line 2269, ../sass/lion.scss */
+.qa-auth-box .qa-nav-user-register .qa-nav-user-link {
+  border-radius: 0;
+  padding: 2px;
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 42px;
+  line-height: 42px;
+  display: block;
+  font-size: 14px;
+}
+/* line 2286, ../sass/lion.scss */
+.qa-auth-box .qa-nav-user-facebook-login {
+  display: block;
+  padding-bottom: 16px;
+}
+
+/*******************************
+  footer section
+*******************************/
+/* line 2297, ../sass/lion.scss */
+.qa-footer {
+  background-color: #333134;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  line-height: 1;
+}
+/* line 2303, ../sass/lion.scss */
+.qa-footer a {
+  color: #fff;
+}
+/* line 2308, ../sass/lion.scss */
+.qa-footer .qa-nav-footer .qa-nav-footer-list {
+  text-align: center;
+}
+/* line 2312, ../sass/lion.scss */
+.qa-footer .qa-nav-footer .qa-nav-footer-list .qa-nav-footer-item {
+  display: inline-block;
+}
+/* line 2314, ../sass/lion.scss */
+.qa-footer .qa-nav-footer .qa-nav-footer-list .qa-nav-footer-item .qa-nav-footer-link {
+  padding: 8px;
+  display: block;
+  line-height: 1;
+}
+/* line 2323, ../sass/lion.scss */
+.qa-footer .qa-attribution {
+  text-align: center;
+  padding: 8px 16px;
+  border-top: 1px solid rgba(203, 141, 79, 0.1);
+}
+
+/*******************************
+  miscellaneous section
+*******************************/
+/* line 2334, ../sass/lion.scss */
+.qa-error, .qa-form-tall-error {
+  background-color: #FF4646;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.3;
+  font-size: 14px;
+  padding: 16px;
+  margin: 64px 16px 16px;
+}
+/* line 2342, ../sass/lion.scss */
+.qa-error a, .qa-form-tall-error a {
+  color: #fff;
+}
+
+/* line 2347, ../sass/lion.scss */
+.qa-form-tall-error {
+  margin: 0;
+}
+
+/* line 2351, ../sass/lion.scss */
+.qa-notice {
+  background-color: #ECEC5B;
+  color: #000;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+/* line 2358, ../sass/lion.scss */
+.qa-notice a {
+  color: #000;
+}
+/* line 2362, ../sass/lion.scss */
+.qa-notice .qa-notice-close-button {
+  background: transparent url('../images/icons/close.svg?1533979654') no-repeat center;
+  border: none;
+  outline: none;
+  text-indent: -9999px;
+  text-shadow: none;
+  width: 22px;
+  height: 22px;
+  display: block;
+  float: right;
+  opacity: 0.5;
+  margin-left: 16px;
+}
+/* line 2375, ../sass/lion.scss */
+.qa-notice .qa-notice-close-button:focus {
+  opacity: 1;
+}
+
+/* line 2381, ../sass/lion.scss */
+.qa-waiting {
+  background: url('../images/loader.svg?1533979654') no-repeat center;
+  display: inline-block;
+  font-size: 0;
+  height: 24px;
+  margin: 0 8px 0 4px;
+  vertical-align: middle;
+  width: 24px;
+}
+
+/* line 2391, ../sass/lion.scss */
+.auth-active {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 2397, ../sass/lion.scss */
+#version_check_site_theme,
+#version_check_site_theme_mobile {
+  color: red;
+}
+
+/*# sourceMappingURL=lion.css.map */

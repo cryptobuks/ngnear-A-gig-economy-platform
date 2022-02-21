@@ -1,0 +1,372 @@
+@import "components/colors";
+
+.primary-color-bg {
+  background-color: $primary-color;
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+.primary-color-border {
+  border-style: solid;
+  border-color: $primary-color;
+}
+
+.secondary-color-bg {
+  background-color: $secondary-color;
+}
+
+.activity-widget-border {
+  border-color: rgba($primary-color, 0.15);
+}
+
+body, html {
+  background-color: $body-bg;
+  color: $body-text;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+.chip {
+  color: rgba($gray-darker, 0.6);
+  background-color: $gray-lighter;
+}
+
+.tag {
+  background-color: lighten($gray-lighter, 5%);
+  color: $text-dark;
+}
+
+/*****************************
+ header section
+****************************/
+.topbar {
+  @extend .primary-color-bg;
+  .qa-search {
+    .qa-search-button {
+      background: $primary-color image-url('icons/search.svg') no-repeat center;
+      background-size: 24px;
+    }
+  }
+}
+
+/*****************************
+ sub nav section
+****************************/
+.qa-nav-sub {
+  // @extend .primary-color-bg; // mobile
+  .qa-nav-sub-list {
+    .qa-nav-sub-item {
+      .qa-nav-sub-link {
+        @extend .primary-color;
+        //color: $light-color; // mobile
+        &:hover {
+          border-width: 0 0 1px 0;
+          @extend .primary-color-border;
+        }
+        &.qa-nav-sub-selected {
+          border-width: 0 0 1px 0;
+          @extend .primary-color-border;
+          //border-color: $light-color; // mobile
+        }
+      }
+    }
+  }
+}
+
+/*****************************
+ pagination section
+****************************/
+.qa-page-links {
+  ul {
+    li {
+      &.qa-page-links-item {
+        .qa-page-selected {
+          @extend .primary-color-bg;
+        }
+      }
+    }
+  }
+}
+
+/*****************************
+ sidebar and widgets section
+****************************/
+.qa-sidepanel {
+  .qa-sidebar {
+    @extend .primary-color-bg;
+    color: rgba($text-light, 0.7);
+    a {
+      color: $text-light;
+    }
+  }
+  .qa-activity-count {
+    .qa-activity-count-item {
+      background-color: rgba($light-color, 0.8);
+      @extend .primary-color;
+
+      &:nth-child(1) {
+        @extend .activity-widget-border;
+      }
+      &:nth-child(2) {
+        @extend .activity-widget-border;
+      }
+      &:nth-child(3) {
+        @extend .activity-widget-border;
+      }
+    }
+  }
+
+  .qa-widget-side {
+    h2 {
+      background-color: $gray-lightest;
+      border-color: $gray-lighter;
+    }
+
+    > div {
+      > a {
+        @extend .tag;
+      }
+    }
+  }
+
+  .qa-nav-cat-link {
+    color: $text-dark;
+  }
+  .qa-nav-cat-note {
+    color: lighten($text-dark, 70%);
+  }
+  .qa-related-q-list {
+    .qa-related-q-item {
+      a {
+        color: $text-dark;
+      }
+    }
+  }
+}
+
+.qa-q-view {
+  .qa-q-view-header {
+    .qa-q-view-where {
+      .qa-q-view-where-data {
+        background-color: $cat-q-green;
+      }
+    }
+  }
+}
+
+/*****************************
+ answer section
+****************************/
+.qa-a-list {
+  .qa-a-list-item {
+    &.qa-a-list-item-selected {
+      border-color: $selected-color;
+    }
+  }
+}
+
+
+/*************************************
+  tags section
+*************************************/
+.qa-template-tags {
+
+  .qa-part-ranking {
+    .qa-top-tags-count {
+      @extend .secondary-color-bg;
+      color: $light-color;
+
+      &:before {
+        background-color: rgba($light-color, 0.25);
+        background: linear-gradient(to top, rgba($light-color, 0.2) 0%, rgba($light-color, 0.2) 100%);
+      }
+    }
+    .qa-top-tags-label {
+      .qa-tag-link {
+        background: $gray-lighter;
+      }
+    }
+  }
+}
+
+/*******************************
+ categories section
+*******************************/
+.qa-template-categories {
+  .qa-part-nav-list {
+    .qa-browse-cat-list {
+      .qa-browse-cat-item {
+        .qa-browse-cat-link, .qa-browse-cat-nolink {
+          color: $gray-darker;
+        }
+        .qa-browse-cat-note {
+          a {
+            background-color: $gray-lightest;
+          }
+        }
+      }
+      .qa-browse-cat-closed {
+        .qa-browse-cat-link, .qa-browse-cat-nolink {
+          background-color: $gray-lighter
+        }
+      }
+      .qa-browse-cat-open {
+        border-color: desaturate(lighten($secondary-color, 10%), 20%);
+        .qa-browse-cat-link, .qa-browse-cat-nolink {
+          background-color: desaturate(lighten($secondary-color, 10%), 20%);
+        }
+      }
+    }
+  }
+}
+
+/*******************************
+ form fields and table section
+*******************************/
+.button-default {
+  background: $light-color;
+}
+
+.button-primary {
+  @extend .primary-color-bg;
+  color: $light-color;
+}
+
+.button-secondary {
+  background: $secondary-color;
+  color: $light-color;
+}
+
+.button-success {
+  background: $button-success;
+  color: $light-color;
+}
+
+.button-gray {
+  background: $gray-lighter;
+  color: $gray-darker;
+}
+
+.button-danger {
+  background: $danger-color;
+  color: $light-color;
+}
+
+/*------[ forms ]------*/
+input:focus, textarea:focus, select:focus {
+  @extend .primary-color-border;
+}
+
+.qa-form-tall-button, .qa-form-wide-button, .qa-form-basic-button {
+  @extend .button-primary;
+}
+
+.qa-form-tall-button-save, .qa-form-wide-button-save, .qa-form-wide-button-saverecalc, .qa-form-tall-button-ask, .qa-form-tall-button-answer, .qa-form-wide-button-change, .qa-form-tall-button-comment, .qa-form-tall-button-send {
+  @extend .button-success;
+}
+
+.qa-form-tall-button-cancel, .qa-form-wide-button-cancel {
+  @extend .button-danger;
+}
+
+.qa-form-tall-ok, .qa-form-wide-ok {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.qa-form-wide-error, .qa-form-tall-error {
+  color: #e74c3c;
+}
+
+.qa-form-tall-help, .qa-form-wide-help {
+  background-color: $secondary-color;
+  color: $light-color;
+}
+
+.qa-ask-similar-title {
+  background: $secondary-color;
+  color: $light-color;
+}
+
+/*******************************
+  login form modal section
+*******************************/
+.qa-auth-box {
+  input[type="text"], input[type="email"], input[type="password"] {
+    &:focus {
+      border-color: $secondary-color;
+    }
+  }
+  .qa-form-tall-button-login {
+    @extend .button-default;
+    @extend .button-success;
+  }
+  .qa-nav-user-register {
+    .qa-nav-user-link {
+      @extend .button-default;
+      @extend .button-gray;
+    }
+  }
+}
+
+/*******************************
+  footer section
+*******************************/
+.qa-footer {
+  background-color: $footer-bg;
+  color: rgba($light-color, .6);
+
+  a {
+    color: $light-color;
+  }
+  .qa-attribution {
+    border-color: rgba($secondary-color, 0.1);
+
+  }
+}
+
+/*******************************
+  miscellaneous section
+*******************************/
+.qa-error, .qa-form-tall-error {
+  background-color: $danger-color;
+  color: rgba($light-color, 0.8);
+  a {
+    color: $light-color;
+  }
+}
+
+.qa-notice {
+  background-color: $notice-bar-color;
+  color: $gray-darker;
+
+  a {
+    color: $gray-darker;
+  }
+}
+
+/*****************************
+ buttons section
+****************************/
+.floating-btn {
+  a {
+    @extend .primary-color-bg;
+    color: $button-text-color;
+  }
+}
+
+/******************************************
+  pussy menu override
+**************************************** */
+.pushy-link {
+  a {
+    &.active, &.qa-nav-main-selected {
+      color: $menu-selected-text;
+    }
+  }
+}

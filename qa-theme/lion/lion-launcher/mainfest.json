@@ -1,0 +1,26 @@
+{
+  "short_name": "Lion",
+  "name": "Lion by Q2A Market",
+  "background_color": "white",
+  "description": "Q2A Market app for Q2A",
+  "theme_color": "#7A532E",
+  "icons": [
+    {
+      "src": "launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone"
+}

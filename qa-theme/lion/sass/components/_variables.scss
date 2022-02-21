@@ -1,0 +1,47 @@
+//********** Fonts **********//
+$font-body: normal normal 16px/1.6 "Roboto", Arial, Helvetica, sans-serif;
+$font-menu-username: normal normal 14px/1.4 "Roboto-Medium", Arial, Helvetica, sans-serif;
+$font-menu-points: normal 100 14px/1.4 "Roboto-Light", Arial, Helvetica, sans-serif;
+$font-list-ans: normal 100 32px/1 "Roboto-Light", Arial, Helvetica, sans-serif;
+$font-vote-views: normal 100 24px/1 "Roboto-Light", Arial, Helvetica, sans-serif;
+$font-card-title: normal 100 24px/1.3 "Roboto", Arial, Helvetica, sans-serif;
+$font-vote-list: normal 100 18px/1 "Roboto-Light", Arial, Helvetica, sans-serif;
+$font-activity: normal normal 32px/1.6 "Roboto-Black", Arial, Helvetica, sans-serif;
+$font-buttons: normal normal 14px/1 "Roboto-Medium", Arial, Helvetica, sans-serif;
+$font-small: 12px;
+$font-content: 14px;
+$font-title: 20px;
+$font-sub-heading: $font-title !default;
+$font-q-title: normal 100 20px/1.4 "Roboto-Light", Arial, Helvetica, sans-serif;
+$font-roboto-medium: "Roboto-Medium", Arial, Helvetica, sans-serif;
+$font-roboto: "Roboto", Arial, Helvetica, sans-serif;
+$font-roboto-light: "Roboto-Light", Arial, Helvetica, sans-serif;
+$font-b: "Roboto-Black", Arial, Helvetica, sans-serif;
+$font-i: "Roboto-Italic", Arial, Helvetica, sans-serif;
+
+$font-h1: normal normal 24px/1 "Roboto-Medium", Arial, Helvetica, sans-serif;
+$font-h2: normal normal 20px/1 "Roboto-Medium", Arial, Helvetica, sans-serif;
+$font-h3: normal normal 16px/1 "Roboto-Medium", Arial, Helvetica, sans-serif;
+
+//********** Padding & Margin **********//
+$padding-base: 16px;
+$margin-base: $padding-base !default;
+
+//********** button size **********//
+$button-tap-size: 48px;
+
+//********** Menu **********//
+$menu_width: 304px !default;
+$menu_padding: 16px;
+$menu_avatar_size: 64px;
+
+$z-down: -1;
+$z-root: 0;
+$z-layer1: 1;
+$z-layer2: 666;
+$z-layer3: 888;
+$z-layer4: 999;
+$z-top: 99999;
+
+//********** q, a, c list **********//
+$action-button-bg: no-repeat $padding-base center;

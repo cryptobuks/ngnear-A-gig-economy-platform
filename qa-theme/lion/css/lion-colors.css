@@ -1,0 +1,278 @@
+/* line 40, ../sass/lion-colors.scss */
+.primary-color-bg, .topbar, .qa-nav-sub, .qa-page-links ul li.qa-page-links-item .qa-page-selected, .qa-sidepanel .qa-sidebar, .qa-template-tags .qa-part-ranking .qa-top-tags-count, .button-primary, .qa-form-tall-button, .qa-form-wide-button, .qa-form-basic-button, .floating-btn a {
+  background-color: #7A532E;
+}
+
+/* line 44, ../sass/lion-colors.scss */
+.primary-color, .qa-sidepanel .qa-activity-count .qa-activity-count-item {
+  color: #7A532E;
+}
+
+/* line 48, ../sass/lion-colors.scss */
+.primary-color-border, input:focus, textarea:focus, select:focus {
+  border-style: solid;
+  border-color: #7A532E;
+}
+
+/* line 53, ../sass/lion-colors.scss */
+.activity-widget-border, .qa-sidepanel .qa-activity-count .qa-activity-count-item:nth-child(1), .qa-sidepanel .qa-activity-count .qa-activity-count-item:nth-child(2), .qa-sidepanel .qa-activity-count .qa-activity-count-item:nth-child(3) {
+  border-style: solid;
+  border-color: rgba(122, 83, 46, 0.15);
+}
+
+/* line 58, ../sass/lion-colors.scss */
+body, html {
+  color: #2A2A2A;
+}
+
+/* line 62, ../sass/lion-colors.scss */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 67, ../sass/lion-colors.scss */
+.chip {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #e7e7e7;
+}
+
+/* line 72, ../sass/lion-colors.scss */
+.tag, .qa-sidepanel .qa-widget-side > div > a {
+  background-color: #f4f4f4;
+  color: #2A2A2A;
+}
+
+/*****************************
+ header section
+****************************/
+/* line 83, ../sass/lion-colors.scss */
+.topbar .qa-search .qa-search-button {
+  background: #7A532E url('../images/icons/search.svg?1533979654') no-repeat center;
+  background-size: 24px;
+}
+
+/*****************************
+ sub nav section
+****************************/
+/* line 98, ../sass/lion-colors.scss */
+.qa-nav-sub .qa-nav-sub-list .qa-nav-sub-item .qa-nav-sub-link.qa-nav-sub-selected {
+  border-color: #fff;
+}
+
+/*****************************
+ pagination section
+****************************/
+/*****************************
+ sidebar and widgets section
+****************************/
+/* line 125, ../sass/lion-colors.scss */
+.qa-sidepanel .qa-sidebar {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 128, ../sass/lion-colors.scss */
+.qa-sidepanel .qa-sidebar a {
+  color: #fff;
+}
+/* line 133, ../sass/lion-colors.scss */
+.qa-sidepanel .qa-activity-count .qa-activity-count-item {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/* line 150, ../sass/lion-colors.scss */
+.qa-sidepanel .qa-widget-side h2 {
+  background-color: #f4f4f4;
+  border-color: #e7e7e7;
+}
+/* line 162, ../sass/lion-colors.scss */
+.qa-sidepanel .qa-nav-cat-link {
+  color: #2A2A2A;
+}
+/* line 165, ../sass/lion-colors.scss */
+.qa-sidepanel .qa-nav-cat-note {
+  color: #dddddd;
+}
+/* line 170, ../sass/lion-colors.scss */
+.qa-sidepanel .qa-related-q-list .qa-related-q-item a {
+  color: #2A2A2A;
+}
+
+/* line 180, ../sass/lion-colors.scss */
+.qa-q-view .qa-q-view-header .qa-q-view-where .qa-q-view-where-data {
+  background-color: #009688;
+}
+
+/*****************************
+ answer section
+****************************/
+/* line 192, ../sass/lion-colors.scss */
+.qa-a-list .qa-a-list-item.qa-a-list-item-selected {
+  border-color: #009688;
+}
+
+/*************************************
+  tags section
+*************************************/
+/* line 204, ../sass/lion-colors.scss */
+.qa-template-tags .qa-part-ranking .qa-top-tags-count {
+  color: #fff;
+}
+/* line 208, ../sass/lion-colors.scss */
+.qa-template-tags .qa-part-ranking .qa-top-tags-count:before {
+  background-color: rgba(255, 255, 255, 0.25);
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+/* line 214, ../sass/lion-colors.scss */
+.qa-template-tags .qa-part-ranking .qa-top-tags-label .qa-tag-link {
+  background: #e7e7e7;
+}
+
+/*******************************
+ categories section
+*******************************/
+/* line 228, ../sass/lion-colors.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-item .qa-browse-cat-link, .qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-item .qa-browse-cat-nolink {
+  color: #000;
+}
+/* line 232, ../sass/lion-colors.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-item .qa-browse-cat-note a {
+  background-color: #f4f4f4;
+}
+/* line 238, ../sass/lion-colors.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-closed .qa-browse-cat-link, .qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-closed .qa-browse-cat-nolink {
+  background-color: #e7e7e7;
+}
+/* line 242, ../sass/lion-colors.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-open {
+  border-color: #c5a788;
+}
+/* line 244, ../sass/lion-colors.scss */
+.qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-open .qa-browse-cat-link, .qa-template-categories .qa-part-nav-list .qa-browse-cat-list .qa-browse-cat-open .qa-browse-cat-nolink {
+  background-color: #c5a788;
+}
+
+/*******************************
+ form fields and table section
+*******************************/
+/* line 255, ../sass/lion-colors.scss */
+.button-default, .qa-auth-box .qa-form-tall-button-login, .qa-auth-box .qa-nav-user-register .qa-nav-user-link {
+  background: #fff;
+}
+
+/* line 259, ../sass/lion-colors.scss */
+.button-primary, .qa-form-tall-button, .qa-form-wide-button, .qa-form-basic-button {
+  color: #fff;
+}
+
+/* line 264, ../sass/lion-colors.scss */
+.button-secondary {
+  background: #CB8D4F;
+  color: #fff;
+}
+
+/* line 269, ../sass/lion-colors.scss */
+.button-success, .qa-form-tall-button-save, .qa-form-wide-button-save, .qa-form-wide-button-saverecalc, .qa-form-tall-button-ask, .qa-form-tall-button-answer, .qa-form-wide-button-change, .qa-form-tall-button-comment, .qa-form-tall-button-send, .qa-auth-box .qa-form-tall-button-login {
+  background: #009688;
+  color: #fff;
+}
+
+/* line 274, ../sass/lion-colors.scss */
+.button-gray, .qa-auth-box .qa-nav-user-register .qa-nav-user-link {
+  background: #e7e7e7;
+  color: #000;
+}
+
+/* line 279, ../sass/lion-colors.scss */
+.button-danger, .qa-form-tall-button-cancel, .qa-form-wide-button-cancel {
+  background: #FF4646;
+  color: #fff;
+}
+
+/*------[ forms ]------*/
+/* line 301, ../sass/lion-colors.scss */
+.qa-form-tall-ok, .qa-form-wide-ok {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+/* line 306, ../sass/lion-colors.scss */
+.qa-form-wide-error, .qa-form-tall-error {
+  color: #e74c3c;
+}
+
+/* line 310, ../sass/lion-colors.scss */
+.qa-form-tall-help, .qa-form-wide-help {
+  background-color: #CB8D4F;
+  color: #fff;
+}
+
+/* line 315, ../sass/lion-colors.scss */
+.qa-ask-similar-title {
+  background: #CB8D4F;
+  color: #fff;
+}
+
+/*******************************
+  login form modal section
+*******************************/
+/* line 325, ../sass/lion-colors.scss */
+.qa-auth-box input[type="text"]:focus, .qa-auth-box input[type="email"]:focus, .qa-auth-box input[type="password"]:focus {
+  border-color: #CB8D4F;
+}
+
+/*******************************
+  footer section
+*******************************/
+/* line 344, ../sass/lion-colors.scss */
+.qa-footer {
+  background-color: #333134;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* line 348, ../sass/lion-colors.scss */
+.qa-footer a {
+  color: #fff;
+}
+/* line 351, ../sass/lion-colors.scss */
+.qa-footer .qa-attribution {
+  border-color: rgba(203, 141, 79, 0.1);
+}
+
+/*******************************
+  miscellaneous section
+*******************************/
+/* line 360, ../sass/lion-colors.scss */
+.qa-error, .qa-form-tall-error {
+  background-color: #FF4646;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 363, ../sass/lion-colors.scss */
+.qa-error a, .qa-form-tall-error a {
+  color: #fff;
+}
+
+/* line 368, ../sass/lion-colors.scss */
+.qa-notice {
+  background-color: #ECEC5B;
+  color: #000;
+}
+/* line 372, ../sass/lion-colors.scss */
+.qa-notice a {
+  color: #000;
+}
+
+/*****************************
+ buttons section
+****************************/
+/* line 381, ../sass/lion-colors.scss */
+.floating-btn a {
+  color: #fff;
+}
+
+/******************************************
+  pussy menu override
+**************************************** */
+/* line 392, ../sass/lion-colors.scss */
+.pushy-link a.active, .pushy-link a.qa-nav-main-selected {
+  color: #7A532E;
+}
+
+/*# sourceMappingURL=lion-colors.css.map */

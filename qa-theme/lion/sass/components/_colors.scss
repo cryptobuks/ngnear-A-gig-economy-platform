@@ -1,0 +1,52 @@
+$primary-color: #7A532E;
+//$primary-color-dark:
+$secondary-color: #CB8D4F;
+$subnav-bg-color: lighten($secondary-color, 30%);
+//$secondary-dark:
+$light-color: #fff;
+$action-color: #9D4405;
+$success-color: #009688;
+$danger-color: #FF4646;
+$body-text: #2A2A2A;
+$body-bg: #e8e8e8;
+$cat-q-green: $success-color !default;
+$button-success: $success-color !default;
+$fb-color: #3B5998;
+$notice-bar-color: #ECEC5B;
+$footer-bg: #333134;
+
+// gray
+$gray-darker: #000;
+$gray-dark: #747474;
+$gray: lighten($gray-darker, 60%);
+$gray-light: lighten($gray, 30%);
+$gray-lighter: lighten($gray-dark, 45%) !default;
+$gray-lightest: lighten($gray-lighter, 5%) !default;
+
+$text-light: $light-color !default;
+$text-dark: $body-text !default;
+
+$link-color: $action-color !default;
+$button-primary: $primary-color !default;
+$button-secondary: $secondary-color !default;
+$button-text-color: $text-light !default;
+
+//********** Elements **********//
+$header-bg: $primary-color !default;
+$comment-odd-bg: $gray-lighter !default;
+$comment-even-bg: lighten($gray-dark, 50%) !default;
+
+//********** Menu **********//
+$menu-bg: $light-color !default;
+$menu-item-color: $text-dark !default;
+$menu-item-hover-color: black;
+$menu-selected-bg: #E7E7E7;
+$menu-selected-text: $primary-color !default;
+
+//********** question list **********//
+$q-list-title-color: $gray-darker !default;
+$q-list-a-counter-color: $action-color !default;
+$q-list-icon-color: $gray-dark !default;
+
+//********** answer list **********//
+$selected-color: #009688;

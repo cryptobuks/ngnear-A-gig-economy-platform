@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+/* line 2, ../sass/components/_picker.scss */
+.ui-colorpicker {
+  position: fixed;
+  border: 1px solid #aaa;
+  padding: 0.2em;
+  background: #fff;
+  display: none;
+}
+/* line 9, ../sass/components/_picker.scss */
+.ui-colorpicker .palette {
+  border-spacing: 0px;
+  font-size: 10px;
+}
+/* line 13, ../sass/components/_picker.scss */
+.ui-colorpicker .palette .cell {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  padding: 1px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: #fff;
+}
+/* line 22, ../sass/components/_picker.scss */
+.ui-colorpicker .palette .cell:hover {
+  border-color: #fff;
+}
+/* line 26, ../sass/components/_picker.scss */
+.ui-colorpicker .palette .cell.alt {
+  color: #000;
+}
+/* line 29, ../sass/components/_picker.scss */
+.ui-colorpicker .palette .cell.alt:hover {
+  border-color: #000;
+}
+/* line 41, ../sass/components/_picker.scss */
+.ui-colorpicker .palette .sep td {
+  height: 2px;
+}
+
+/* line 20, ../sass/lion-admin.scss */
+.lion-options .qa-form-wide-spacer {
+  height: 100px;
+}
+/* line 24, ../sass/lion-admin.scss */
+.lion-options .lo-header, .lion-options .qa-part-custom-footer {
+  font-family: "Open Sans", Sans-Serif;
+}
+/* line 28, ../sass/lion-admin.scss */
+.lion-options h2 {
+  font-size: 100%;
+}
+/* line 34, ../sass/lion-admin.scss */
+.lion-options .lo-header .lo-logo {
+  width: 56px;
+  height: 56px;
+  float: left;
+  margin-right: 16px;
+}
+/* line 41, ../sass/lion-admin.scss */
+.lion-options .lo-header .lo-logo-q2am {
+  float: right;
+  margin-top: 6px;
+}
+/* line 46, ../sass/lion-admin.scss */
+.lion-options .lo-header .lo-themename {
+  float: left;
+}
+/* line 50, ../sass/lion-admin.scss */
+.lion-options .lo-header h1 {
+  font-size: 150%;
+  line-height: 1.3;
+}
+/* line 54, ../sass/lion-admin.scss */
+.lion-options .lo-header p {
+  font-size: 90%;
+}
+/* line 60, ../sass/lion-admin.scss */
+.lion-options .lo-footer {
+  box-sizing: border-box;
+}
+/* line 5, ../sass/lion-admin.scss */
+.lion-options .lo-footer:before, .lion-options .lo-footer:after {
+  content: "";
+  display: table;
+}
+/* line 10, ../sass/lion-admin.scss */
+.lion-options .lo-footer:after {
+  clear: both;
+}
+/* line 64, ../sass/lion-admin.scss */
+.lion-options .lo-footer .support {
+  padding-right: 8px;
+}
+/* line 67, ../sass/lion-admin.scss */
+.lion-options .lo-footer .feature {
+  padding-left: 8px;
+}
+/* line 71, ../sass/lion-admin.scss */
+.lion-options .lo-footer .support, .lion-options .lo-footer .feature {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+/* line 76, ../sass/lion-admin.scss */
+.lion-options .lo-footer .support h3, .lion-options .lo-footer .feature h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 16px;
+}
+/* line 83, ../sass/lion-admin.scss */
+.lion-options .lo-footer .support p, .lion-options .lo-footer .feature p {
+  font-size: 90%;
+  margin-bottom: 16px;
+  font-weight: 100;
+}
+/* line 89, ../sass/lion-admin.scss */
+.lion-options .lo-footer .support .btn-footer, .lion-options .lo-footer .feature .btn-footer {
+  background-color: #dd3333;
+  color: #FFF;
+  padding: 8px 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  text-transform: uppercase;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+}
+/* line 100, ../sass/lion-admin.scss */
+.lion-options .lo-footer .support .btn-footer:hover, .lion-options .lo-footer .feature .btn-footer:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.55);
+}
+/* line 104, ../sass/lion-admin.scss */
+.lion-options .lo-footer .support .btn-footer:focus, .lion-options .lo-footer .feature .btn-footer:focus {
+  box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.35) inset;
+}
+/* line 110, ../sass/lion-admin.scss */
+.lion-options .lo-footer .credits {
+  margin-top: 16px;
+  padding-top: 8px;
+  border-top: 1px solid #ddd;
+  font-size: 12px !important;
+  text-align: right;
+}
+
+/*# sourceMappingURL=lion-admin.css.map */

@@ -1,0 +1,164 @@
+@import "compass/css3/font-face";
+
+@include font-face("Material Icons",
+        font-files(
+                        "MaterialIcons-Regular.ttf",
+                        "MaterialIcons-Regular.woff",
+                        "MaterialIcons-Regular.woff2",
+                        "MaterialIcons-Regular.svg",
+                        "MaterialIcons-Regular.eot"
+        ));
+
+// Roboto Thin
+//@include font-face("Roboto-Thin",
+//        font-files(
+//                        "Roboto-Thin-webfont.ttf",
+//                        "Roboto-Thin-webfont.woff",
+//                        "Roboto-Thin-webfont.svg",
+//                        "Roboto-Thin-webfont.eot"
+//        ));
+
+//@include font-face("Roboto-ThinItalic",
+//        font-files(
+//                        "Roboto-ThinItalic-webfont.ttf",
+//                        "Roboto-ThinItalic-webfont.woff",
+//                        "Roboto-ThinItalic-webfont.svg",
+//                        "Roboto-ThinItalic-webfont.eot"
+//        ));
+
+// Roboto Light
+@include font-face("Roboto-Light",
+        font-files(
+                        "Roboto-Light-webfont.ttf",
+                        "Roboto-Light-webfont.woff",
+                        "Roboto-Light-webfont.svg",
+                        "Roboto-Light-webfont.eot"
+        ));
+
+//@include font-face("Roboto-LightItalic",
+//        font-files(
+//                        "Roboto-LightItalic-webfont.ttf",
+//                        "Roboto-LightItalic-webfont.woff",
+//                        "Roboto-LightItalic-webfont.svg",
+//                        "Roboto-LightItalic-webfont.eot"
+//        ));
+
+// Roboto Regular
+@include font-face("Roboto",
+        font-files(
+                        "Roboto-Regular-webfont.ttf",
+                        "Roboto-Regular-webfont.woff",
+                        "Roboto-Regular-webfont.svg",
+                        "Roboto-Regular-webfont.eot"
+        ));
+
+@include font-face("Roboto-Italic",
+        font-files(
+                        "Roboto-Italic-webfont.ttf",
+                        "Roboto-Italic-webfont.woff",
+                        "Roboto-Italic-webfont.svg",
+                        "Roboto-Italic-webfont.eot"
+        ));
+
+// Roboto Medium
+@include font-face("Roboto-Medium",
+        font-files(
+                        "Roboto-Medium-webfont.ttf",
+                        "Roboto-Medium-webfont.woff",
+                        "Roboto-Medium-webfont.svg",
+                        "Roboto-Medium-webfont.eot"
+        ));
+
+//@include font-face("Roboto-MediumItalic",
+//        font-files(
+//                        "Roboto-MediumItalic-webfont.ttf",
+//                        "Roboto-MediumItalic-webfont.woff",
+//                        "Roboto-MediumItalic-webfont.svg",
+//                        "Roboto-MediumItalic-webfont.eot"
+//        ));
+
+// Roboto Bold
+//@include font-face("Roboto-Bold",
+//        font-files(
+//                        "Roboto-Bold-webfont.ttf",
+//                        "Roboto-Bold-webfont.woff",
+//                        "Roboto-Bold-webfont.svg",
+//                        "Roboto-Bold-webfont.eot"
+//        ));
+//
+//@include font-face("Roboto-BoldItalic",
+//        font-files(
+//                        "Roboto-BoldItalic-webfont.ttf",
+//                        "Roboto-BoldItalic-webfont.woff",
+//                        "Roboto-BoldItalic-webfont.svg",
+//                        "Roboto-BoldItalic-webfont.eot"
+//        ));
+
+// Roboto Black
+@include font-face("Roboto-Black",
+        font-files(
+                        "Roboto-Black-webfont.ttf",
+                        "Roboto-Black-webfont.woff",
+                        "Roboto-Black-webfont.svg",
+                        "Roboto-Black-webfont.eot"
+        ));
+
+//@include font-face("Roboto-BlackItalic",
+//        font-files(
+//                        "Roboto-BlackItalic-webfont.ttf",
+//                        "Roboto-BlackItalic-webfont.woff",
+//                        "Roboto-BlackItalic-webfont.svg",
+//                        "Roboto-BlackItalic-webfont.eot"
+//        ));
+
+/* CONDENSED FONTS */
+// RobotoCondensed Light
+//@include font-face("RobotoCondensed-Light",
+//        font-files(
+//                        "RobotoCondensed-Light-webfont.ttf",
+//                        "RobotoCondensed-Light-webfont.woff",
+//                        "RobotoCondensed-Light-webfont.svg",
+//                        "RobotoCondensed-Light-webfont.eot"
+//        ));
+//
+//@include font-face("RobotoCondensed-LightItalic",
+//        font-files(
+//                        "RobotoCondensed-LightItalic-webfont.ttf",
+//                        "RobotoCondensed-LightItalic-webfont.woff",
+//                        "RobotoCondensed-LightItalic-webfont.svg",
+//                        "RobotoCondensed-LightItalic-webfont.eot"
+//        ));
+//
+//// RobotoCondensed Regular
+//@include font-face("RobotoCondensed",
+//        font-files(
+//                        "RobotoCondensed-Regular-webfont.ttf",
+//                        "RobotoCondensed-Regular-webfont.woff",
+//                        "RobotoCondensed-Regular-webfont.svg",
+//                        "RobotoCondensed-Regular-webfont.eot"
+//        ));
+//
+//@include font-face("RobotoCondensed-Italic",
+//        font-files(
+//                        "RobotoCondensed-Italic-webfont.ttf",
+//                        "RobotoCondensed-Italic-webfont.woff",
+//                        "RobotoCondensed-Italic-webfont.svg",
+//                        "RobotoCondensed-Italic-webfont.eot"
+//        ));
+//
+//// RobotoCondensed Bold
+//@include font-face("RobotoCondensed-Bold",
+//        font-files(
+//                        "RobotoCondensed-Bold-webfont.ttf",
+//                        "RobotoCondensed-Bold-webfont.woff",
+//                        "RobotoCondensed-Bold-webfont.svg",
+//                        "RobotoCondensed-Bold-webfont.eot"
+//        ));
+//
+//@include font-face("RobotoCondensed-BoldItalic",
+//        font-files(
+//                        "RobotoCondensed-BoldItalic-webfont.ttf",
+//                        "RobotoCondensed-BoldItalic-webfont.woff",
+//                        "RobotoCondensed-BoldItalic-webfont.svg",
+//                        "RobotoCondensed-BoldItalic-webfont.eot"
+//        ));
